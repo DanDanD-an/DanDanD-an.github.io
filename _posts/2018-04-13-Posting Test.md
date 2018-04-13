@@ -14,6 +14,8 @@ description: Test
 # jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 ---
 
+## Summary
+
 {% highlight html %}
 포스팅 작성 테스트입니다.
 This is a Test.
@@ -22,7 +24,7 @@ This is a Test.
 ---
 ## Images
 
-![Markdowm Image][/assets/images/profile.jpg]
+![Markdowm Image][/images/profile.jpg]
 <figcaption class="caption">Ice Bear</figcaption>
 
 ---
