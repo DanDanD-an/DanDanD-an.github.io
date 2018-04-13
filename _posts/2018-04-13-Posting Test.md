@@ -24,7 +24,7 @@ This is a Test.
 ---
 ## Images
 
-![Markdowm Image][/images/profile.jpg]
+![Markdowm Image][6]
 <figcaption class="caption">Ice Bear</figcaption>
 
 ---
