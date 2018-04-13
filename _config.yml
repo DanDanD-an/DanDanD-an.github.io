@@ -57,13 +57,13 @@ authors:
         name: Dan
         bio: Student
         external-image: false
-        picture: icebear.png
+        picture: assets/images/icebear.png
       #  twitter: johndoe
     jamesfoster:
         name: Dan
         bio: Student
         external-image: false
-        picture: icebear.png
+        picture: iassets/images/cebear.png
         #twitter: jamesfoster
 
 # do you want a larger site? change the option below
