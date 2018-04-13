@@ -1,0 +1,24 @@
+{
+  "name": "typeface-nanum-square-round",
+  "version": "1.0.1",
+  "description": "Hangul font for title, created by NAVER.",
+  "main": "nanumsquareround.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChalkPE/NanumSquareRound.git"
+  },
+  "keywords": [
+    "nanum",
+    "nanumsquare",
+    "nanumsquareround"
+  ],
+  "author": "NAVER",
+  "license": "OFL-1.1",
+  "bugs": {
+    "url": "https://github.com/ChalkPE/NanumSquareRound/issues"
+  },
+  "homepage": "https://github.com/ChalkPE/NanumSquareRound#readme"
+}
