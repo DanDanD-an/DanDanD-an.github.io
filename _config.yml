@@ -8,7 +8,7 @@ description: A blog for Study
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: icebear.png
+picture: iassets/images/cebear.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
