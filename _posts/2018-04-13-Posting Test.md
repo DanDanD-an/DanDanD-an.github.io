@@ -14,6 +14,9 @@ description: Test
 
 ## Summary
 
+포스팅 작성 테스트입니다.
+This is a Test.
+
 {% highlight html %}
 포스팅 작성 테스트입니다.
 This is a Test.
