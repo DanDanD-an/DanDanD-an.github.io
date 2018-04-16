@@ -19,7 +19,7 @@ resume-url: https://google.com/?q=my+resume
 url: https://DanDanD-an.github.io
 # your url: http://USERNAME.github.io
 
-permalink: /:title/
+permalink: /:categories/:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -72,8 +72,8 @@ authors:
 width: normal
 
 # if you don't need pagination, comment the *paginate* configs below
-# paginate: 5
-# paginate_path: "blog/:num/"
+paginate: 10
+paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
 projects: true
