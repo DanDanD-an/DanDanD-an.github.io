@@ -7,6 +7,7 @@ headerImage: false
 tag:
 - Test
 star: true
+blog: true
 category: Test
 author: Dan
 description: Test
