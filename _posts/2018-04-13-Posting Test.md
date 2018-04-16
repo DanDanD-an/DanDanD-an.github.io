@@ -7,8 +7,8 @@ headerImage: false
 tag:
 - Test
 star: true
-blog: true
-category: Test
+category: Blog
+categories: Test
 author: Dan
 description: Test
 # jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.github.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
