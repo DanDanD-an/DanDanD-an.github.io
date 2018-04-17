@@ -24,6 +24,32 @@ title: Categories
 
 <hr>
 
+<section class="tag-list">
+    {% for categories in site.categories  %}
+    <h2 class="title" id="{{ categories[0] | slugify }}">#{{ categories[0] }}</h2>
+
+    <ul class="list">
+        {% assign pages_list = categories[1] %}
+        {% for post in pages_list reversed %}
+            {% if post.title != null %}
+                {% if group == null or group == post.group %}
+                    <li class="item">
+                        <a class="url" href="{{ site.url }}{{ post.url }}">
+                            <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                            <h3 class="title">{{ post.title }}</h3>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+    </ul>
+
+    <div class="breaker"></div>
+    {% endfor %}
+</section>
+
 <div id="archives">
 {% for category in site.categories %}
   <div class="archive-group">
