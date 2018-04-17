@@ -3,6 +3,27 @@ layout: page
 -permalink: /Categories/
 title: Categories
 ---
+
+<section class="list">
+    <h1 class="title">Categories</h1>
+
+    {% assign tags_list = site.Categories %}
+
+    {% if tags_list.first[0] == null %}
+        {% for tag in tags_list %}
+            <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    {% else %}
+        {% for tag in tags_list %}
+            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% endfor %}
+    {% endif %}
+
+    {% assign tags_list = nil %}
+</section>
+
+<hr>
+
 <div id="archives">
 {% for category in site.categories %}
   <div class="archive-group">
