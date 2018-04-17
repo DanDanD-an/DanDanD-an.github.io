@@ -7,15 +7,15 @@ title: Categories
 <section class="list">
     <h1 class="title">Categories</h1>
 
-    {% assign tags_list = site.Categories %}
+    {% assign tags_list = site.categories %}
 
     {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
+        {% for categories in tags_list %}
+            <a class="item" href="#{{ categories | slugify }}">{{ categories }}</a>
         {% endfor %}
     {% else %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% for categories in tags_list %}
+            <a class="item" href="#{{ categories[0] | slugify }}">{{ categories[0] }}</a>
         {% endfor %}
     {% endif %}
 
@@ -39,5 +39,7 @@ title: Categories
     </article>
     {% endfor %}
   </div>
+	<p></p>
+	
 {% endfor %}
 </div>
