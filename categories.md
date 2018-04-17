@@ -38,7 +38,8 @@ title: Categories
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
     </article>
     {% endfor %}
+		<p></p>
+		<hr>
   </div>
 {% endfor %}
-<p></p>
 </div>
