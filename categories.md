@@ -11,11 +11,11 @@ title: Categories
 
     {% if tags_list.first[0] == null %}
         {% for categories in tags_list %}
-            <a class="item" href="#{{ categories | slugify }}">{{ categories }}</a>
+            <a class="item" href="#{{ categories | slugify }}">{{ categories }} </a>
         {% endfor %}
     {% else %}
         {% for categories in tags_list %}
-            <a class="item" href="#{{ categories[0] | slugify }}">{{ categories[0] }}</a>
+            <a class="item" href="#{{ categories[0] | slugify }}">{{ categories[0] }} </a>
         {% endfor %}
     {% endif %}
 
