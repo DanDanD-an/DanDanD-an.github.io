@@ -1,4 +1,4 @@
-![Markdowm Image][1]
+<img src="/assets/images/profile.jpg" style="margin-left: auto; margin-right: auto; display: block;" width="150" height="150" alt="." />
 
 <p align="center">
     <h2 align="center">
