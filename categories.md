@@ -6,29 +6,29 @@ title: Categories
 <section class="list">
     <h1 class="title">Categories</h1>
 
-    {% assign tags_list = site.tags %}
+    {% assign categories_list = site.categories %}
 
-    {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
+    {% if categories_list.first[0] == null %}
+        {% for categories in categories_list %}
+            <a class="item" href="#{{ categories | slugify }}">{{ categories }}</a>
         {% endfor %}
     {% else %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% for categories in categories_list %}
+            <a class="item" href="#{{ categories[0] | slugify }}">{{ categories[0] }}</a>
         {% endfor %}
     {% endif %}
 
-    {% assign tags_list = nil %}
+    {% assign categories_list = nil %}
 </section>
 
 <hr>
 
-<section class="tag-list">
-    {% for tag in site.tags  %}
-    <h2 class="title" id="{{ tag[0] | slugify }}">>{{ tag[0] }}</h2>
+<section class="categories-list">
+    {% for categories in site.categories  %}
+    <h2 class="title" id="{{ categories[0] | slugify }}">> {{ categories[0] }}</h2>
 
     <ul class="list">
-        {% assign pages_list = tag[1] %}
+        {% assign pages_list = categories[1] %}
         {% for post in pages_list reversed %}
             {% if post.title != null %}
                 {% if group == null or group == post.group %}
