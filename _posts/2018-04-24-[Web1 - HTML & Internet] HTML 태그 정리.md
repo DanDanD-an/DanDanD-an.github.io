@@ -160,6 +160,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% endhighlight %}
 
 * < !doctype html>: 웹페이지가 HTML로 만들어졌음을 표현
+
 * < meta charset="utf-8">: utf-8방식으로 작성되었음을 표현
 
 ---
