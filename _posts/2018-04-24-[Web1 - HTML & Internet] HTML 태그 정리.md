@@ -1,0 +1,163 @@
+---
+title: "[Web1 - HTML & Internet] HTML 태그 정리"
+layout: post
+date: 2018-04-24 15:52
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- Web
+- HTML
+- Web1 - HTML & Internet
+star: false
+category: blog
+categories: Web
+author: Dan
+description: Web1 - HTML & Internet
+---
+
+### 1. < strong>: 강조 표시
+
+Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications.
+
+{% highlight raw %}
+Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications.
+{% endhighlight %}
+
+---
+### 2. < u>: 밑줄
+
+Hypertext Markup Language (HTML) is the standard markup language for creating <u>web pages</u> and web applications.
+
+{% highlight raw %}
+Hypertext Markup Language (HTML) is the standard markup language for creating <u>web pages</u> and web applications.
+{% endhighlight %}
+
+---
+### 3. < br>: 줄바꿈. 닫는 코드 없음!
+
+Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+
+{% highlight raw %}
+Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+{% endhighlight %}
+
+---
+### 4. < p>: paragraphs
+
+<p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+
+{% highlight raw %}
+<p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+{% endhighlight %}
+
+### 4-1. < p>태그에 CSS 이용해 단락 간 간격 조절하기
+
+<p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+
+{% highlight raw %}
+<p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+{% endhighlight %}
+
+---
+### 5. < img>: 이미지 삽입. src 속성(이미지 주소)을 추가해야 함!
+
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+
+{% highlight raw %}
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+{% endhighlight %}
+
+### 5-1. 웹페이지 파일과 같은 위치에 있는 이미지 삽입: src 속성의 값으로 이름만 써주면 됨!
+
+<img src="/assets/images/profile.jpg">
+
+{% highlight raw %}
+<img src="/assets/images/profile.jpg">
+{% endhighlight %}
+
+### 5-2. width 속성: 이미지 사이즈 조절(숫자 or %)
+
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
+
+{% highlight raw %}
+<img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
+{% endhighlight %}
+
+---
+### 6. < li>: 리스트
+
+<li>1. HTML</li>
+<li>2. CSS</li>
+<li>3. JavaScript</li>
+
+{% highlight raw %}
+<li>1. HTML</li>
+<li>2. CSS</li>
+<li>3. JavaScript</li>
+{% endhighlight %}
+
+### 6-1. < ul>: undordered list
+
+<ul>
+<li>1. HTML</li>
+<li>2. CSS</li>
+<li>3. JavaScript</li>
+</ul>
+
+{% highlight raw %}
+<ul>
+<li>1. HTML</li>
+<li>2. CSS</li>
+<li>3. JavaScript</li>
+</ul>
+{% endhighlight %}
+
+### 6-2. < ol>: ordered list
+
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+
+{% highlight raw %}
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+{% endhighlight %}
+
+### 7. < title>: 웹페이지 제목 설정
+### 8. < body>: 본문
+### 9. < head>: 본문 설명
+
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+</head>
+
+{% highlight raw %}
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+</head>
+{% endhighlight %}
+
+* < !doctype html>: 웹페이지가 HTML로 만들어졌음을 표현
+* < meta charset="utf-8">: utf-8방식으로 작성되었음을 표현
+
+---
+### 10. < a>: 링크
+
+<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+
+{% highlight raw %}
+<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+{% endhighlight %}
+
+* href: HyperText Reference의 약자
