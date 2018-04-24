@@ -57,4 +57,4 @@ Manager Servers > Apache Web Server 선택 > Start or Stop
 #### 2. 웹서버와 HTTP
 
 
-[1]: /assets/images/스크린샷2018-04-24오후5.16.14.jpg
+[1]: /assets/images/스크린샷.jpg
