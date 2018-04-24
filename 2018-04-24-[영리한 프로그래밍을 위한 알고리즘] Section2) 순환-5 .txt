@@ -40,7 +40,7 @@ description: 영리한 프로그래밍을 위한 알고리즘
 ---
 #### Pseudo Code로 구현하기
 
-* Pseudo 코드
+* Pseudo Code
 {% highlight raw %}
 if the pixel (x, y) is outside the grid // 유효한 좌표인지 확인
   the result is 0;
