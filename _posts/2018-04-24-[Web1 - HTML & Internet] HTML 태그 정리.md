@@ -22,7 +22,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% highlight raw %}
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications.
 {% endhighlight %}
-
+<br>
 ---
 ### 2. < u>: 밑줄
 
@@ -31,7 +31,7 @@ Hypertext Markup Language (HTML) is the standard markup language for creating <u
 {% highlight raw %}
 Hypertext Markup Language (HTML) is the standard markup language for creating <u>web pages</u> and web applications.
 {% endhighlight %}
-
+<br>
 ---
 ### 3. < br>: 줄바꿈. 닫는 코드 없음!
 
@@ -40,7 +40,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% highlight raw %}
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
 {% endhighlight %}
-
+<br>
 ---
 ### 4. < p>: paragraphs
 
@@ -59,7 +59,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% highlight raw %}
 <p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
 {% endhighlight %}
-
+<br>
 ---
 ### 5. < img>: 이미지 삽입. src 속성(이미지 주소)을 추가해야 함!
 
@@ -88,7 +88,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% highlight raw %}
 <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
 {% endhighlight %}
-
+<br>
 ---
 ### 6. < li>: 리스트
 
@@ -138,25 +138,25 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 </ol>
 {% endhighlight %}
 
+<br>
+
 ---
 ### 7. < title>: 웹페이지 제목 설정
 ### 8. < body>: 본문
 ### 9. < head>: 본문 설명
 
 {% highlight raw %}
-<!doctype html>
+<!doctype html> // 웹페이지가 HTML로 만들어짐
 <html>
 <head>
   <title>WEB1 - html</title>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> // utf-8방식으로 작성됨
 </head>
 <body>
 ...
 {% endhighlight %}
 
-* < !doctype html>: 웹페이지가 HTML로 만들어졌음을 표현
-* < meta charset="utf-8">: utf-8방식으로 작성되었음을 표현
-
+<br>
 ---
 ### 10. < a>: 링크
 
