@@ -8,6 +8,7 @@ tag:
 - Web
 - HTML
 - Web1 - HTML & Internet
+- 강의노트
 star: false
 category: blog
 categories: Web
@@ -167,3 +168,5 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 {% endhighlight %}
 
 * href: HyperText Reference의 약자
+
+---
