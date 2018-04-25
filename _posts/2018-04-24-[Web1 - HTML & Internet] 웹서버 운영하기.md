@@ -57,4 +57,4 @@ Manager Servers > Apache Web Server 선택 > Start or Stop
 #### 2. 웹서버와 HTTP
 
 
-[1]: /assets/images/스크린샷.jpg
+[1]: [1]: /assets/images/스크린샷.jpg

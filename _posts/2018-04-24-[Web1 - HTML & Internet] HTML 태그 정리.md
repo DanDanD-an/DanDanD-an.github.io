@@ -143,13 +143,6 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 ### 8. < body>: 본문
 ### 9. < head>: 본문 설명
 
-<!doctype html>
-<html>
-<head>
-  <title>WEB1 - html</title>
-  <meta charset="utf-8">
-</head>
-
 {% highlight raw %}
 <!doctype html>
 <html>
@@ -157,19 +150,20 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
   <title>WEB1 - html</title>
   <meta charset="utf-8">
 </head>
+<body>
+...
 {% endhighlight %}
 
 * < !doctype html>: 웹페이지가 HTML로 만들어졌음을 표현
-
 * < meta charset="utf-8">: utf-8방식으로 작성되었음을 표현
 
 ---
 ### 10. < a>: 링크
 
-<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+<a href="https://www.w3.org/TR/html5/" target="blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
 
 {% highlight raw %}
-<a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+<a href="https://www.w3.org/TR/html5/" target="blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
 {% endhighlight %}
 
 * href: HyperText Reference의 약자
