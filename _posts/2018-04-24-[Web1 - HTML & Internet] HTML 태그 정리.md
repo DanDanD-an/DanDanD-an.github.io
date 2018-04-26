@@ -21,7 +21,7 @@ description: Web1 - HTML & Internet
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications.
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications.
 {% endhighlight %}
 <br>
@@ -31,7 +31,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 Hypertext Markup Language (HTML) is the standard markup language for creating <u>web pages</u> and web applications.
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 Hypertext Markup Language (HTML) is the standard markup language for creating <u>web pages</u> and web applications.
 {% endhighlight %}
 <br>
@@ -41,7 +41,7 @@ Hypertext Markup Language (HTML) is the standard markup language for creating <u
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
 {% endhighlight %}
 <br>
@@ -51,7 +51,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
 {% endhighlight %}
 
@@ -62,7 +62,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <p>Hypertext Markup Language (HTML) is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
 {% endhighlight %}
 <br>
@@ -72,7 +72,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <img src="/assets/images/profile.jpg">
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <img src="/assets/images/profile.jpg">
 {% endhighlight %}
 
@@ -94,7 +94,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png" width="50%">
 {% endhighlight %}
 <br>
@@ -106,7 +106,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <li>3. JavaScript</li>
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <li>1. HTML</li>
 <li>2. CSS</li>
 <li>3. JavaScript</li>
@@ -123,7 +123,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 </ul>
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <ul>
 <li>1. HTML</li>
 <li>2. CSS</li>
@@ -142,7 +142,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 </ol>
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <ol>
   <li>HTML</li>
   <li>CSS</li>
@@ -158,7 +158,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 ### 9. < head>: 본문 설명
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <!doctype html> // 웹페이지가 HTML로 만들어짐
 <html>
 <head>
@@ -176,7 +176,7 @@ Hypertext Markup Language (HTML) is the standard markup language for <strong>cre
 <a href="https://www.w3.org/TR/html5/" target="blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
 
 * html 코드
-{% highlight raw %}
+{% highlight html %}
 <a href="https://www.w3.org/TR/html5/" target="blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
 {% endhighlight %}
 
