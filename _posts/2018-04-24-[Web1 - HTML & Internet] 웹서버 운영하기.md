@@ -35,7 +35,7 @@ description: Web1 - HTML & Internet
 * 맥에는 Apache가 기본적으로 설치되어 있다!! 하지만 Apache를 이용하지 못할 경우를 대비해 해당 강좌에서는 Bitnami 라는 프로그램을 추가적으로 설치, 이를 이용해 수업을 진행하였다.
 
 #### 1) Bitnami MAMP Stack 프로그램 다운로드 & 설치
-    <a href = "https://bitnami.com/stack/mamp">https://bitnami.com/stack/mamp</a> << 다운로드 사이트
+https://bitnami.com/stack/mamp << 다운로드 사이트
 
 #### 2) Bitnami Manager 프로그램 실행
 : 웹 서버 제어 프로그램
@@ -44,8 +44,8 @@ description: Web1 - HTML & Internet
 #### 3) Bitnami Manager 프로그램에서 'Go to Application' 버튼 클릭
 
 #### 4) 아래와 같은 창이 나온다면 웹서버를 성공적으로 설치 완료한 것이다.
-    ![Markdowm Image][1]
-    <figcaption class="caption">http://localhost:8080/</figcaption>
+![Markdowm Image][1]
+<figcaption class="caption">http://localhost:8080/</figcaption>
 
 <br>
 #### 5) 이제 Bitnami Manager 프로그램을 이용해 웹서버를 끄고 켤 수 있다
@@ -69,7 +69,7 @@ Manager Servers > Apache Web Server 선택 > Start or Stop
 
 #### 2) 웹페이지 표시 과정
 {% highlight raw %}
-http://127.0.0.1:8080/index.html을 웹브라우저에 입력
+http://127.0.0.1:8080/index.html 을 웹브라우저에 입력
 → 웹브라우저가 같은 컴퓨터에 설치된 웹서버에게 index.html을 요청
 → 웹서버가  웹페이지를 저장하기로 약속된 디렉터리인 htdocs에서 index.html 파일의 코드를 읽어서 웹서버에게 전송
 → 웹서버는 코드를 해석해서 화면에 웹페이지를 표시
