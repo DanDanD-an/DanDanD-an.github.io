@@ -1,7 +1,7 @@
 ---
 title: "[Web1 - HTML & Internet] 코드의 힘-웹페이지에 기타 기능 추가하기"
 layout: post
-date: 2018-04-25 14:52
+date: 2018-04-26 14:52
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -16,22 +16,23 @@ author: Dan
 description: Web1 - HTML & Internet
 ---
 
-### 1. 동영상 삽입하기: <ifame> 태그 이용
+### 1. 동영상 삽입하기: < ifame> 태그 이용
 
 <p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder="0" allowfullscreen></iframe>
 </p>
 
+* html 코드
 {% highlight raw %}
 <p>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/jSJM9iOiQ1g" frameborder="0" allowfullscreen></iframe>
 </p>
 {% endhighlight %}
 
-* youtube 동영상의 경우, 공유 > 소스코드에 표시되는 html 코드를 사용하면 된다!
+* youtube 동영상의 경우, **공유 > 소스코드** 탭에 표시되는 html 코드를 사용하면 된다!
 
 ---
-### 2. 댓글 기능 추가하기: <a href="https://disqus.com/" target="blank" title="html5 specification">Disqus</a> 이용
+### 2. 댓글 기능 추가하기: <a href="https://disqus.com/" target="blank" title="html5 specification"><u>Disqus</u></a> 이용
 
 #### 1) Disqus 로그인 > admin
 #### 2) 웹 사이트 생성 > Shortname 등 지정 > Create Site 클릭
@@ -44,7 +45,7 @@ description: Web1 - HTML & Internet
 ![Markdowm Image][3]
 
 ---
-### 3. 채팅 기능 추가하기: <a href="https://www.tawk.to/" target="blank" title="html5 specification">tawk</a> 이용
+### 3. 채팅 기능 추가하기: <a href="https://www.tawk.to/" target="blank" title="html5 specification"><u>tawk</u></a> 이용
 
 : tawk를 이용하면 웹사이트 방문자와 실시간으로 채팅을 할 수 있다!
 
@@ -57,7 +58,7 @@ description: Web1 - HTML & Internet
 ![Markdowm Image][5]
 
 ---
-### 4. 웹사이트 방문자 분석하기: <a href="https://analytics.google.com" target="blank" title="html5 specification">Google analytics</a> 사용
+### 4. 웹사이트 방문자 분석하기: <a href="https://analytics.google.com" target="blank" title="html5 specification"><u>Google analytics</u></a> 사용
 : 방문자 수, 방문자 유입 경로, 방문자 이동 경로, 방문자 환경 등의 정보 제공<br>
 
 #### 1) Google analytics 로그인
