@@ -14,7 +14,7 @@ title: Categories
         {% endfor %}
     {% else %}
         {% for tag in tags_list %}
-            <a class="item" href="#{{ tag[0] | slugify }}" style = "text-decoration = none">{{ tag[0] }}</a>
+            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
         {% endfor %}
     {% endif %}
 
