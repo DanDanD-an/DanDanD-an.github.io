@@ -1,3 +1,8 @@
+// font init
+
+@import "maxins";
+
+@include font-face(NanumSquareRound, "https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css", 400, normal);
 
 @import "base/variables";
 @import "base/normalize";
