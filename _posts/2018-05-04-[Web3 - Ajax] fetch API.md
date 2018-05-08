@@ -101,7 +101,43 @@ description: Web2 - Ajax
 * 동기적 실행: callbackme가 실행되는 동안 console.log(1)과 console.log(2)가 실행<br>
 cf) 비동기적 실행: callbackme가 실행되는 동안 console.log(1)과 console.log(2)가 실행되지 않음. 병렬적으로 실행.
 
+---
+### 3. fetch API - response 객체
+
+* **response 객체의 status** 에는 서버와의 통신 상태를 파악할 수 있는 정보가 들어있다.
+
+* 소스 코드
+{% highlight html %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <article>
+
+    </article>
+    <input type="button" value="fetch" onclick="
+    //Asynchronous
+      fetch('3.html').then(function(response){
+        console.log(response);
+      });
+      console.log(1);
+      console.log(2);
+    ">
+  </body>
+</html>
+{% endhighlight %}
+
+* 결과
+![Markdown Image][3]
+파일을 성공적으로 찾았다는 의미에서 response 객체의 status 값 200을 반환<br>
+
+* 파일을 발견하지 못했다면, 200 대신 404를 반환한다.
+
 
 ---
 [1]: /assets/images/스크린샷2018-05-04-1.jpg
 [2]: /assets/images/스크린샷2018-05-04-2.jpg
+[3]: /assets/images/스크린샷2018-05-08-1.jpg
