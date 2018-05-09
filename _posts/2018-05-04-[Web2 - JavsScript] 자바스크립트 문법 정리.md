@@ -16,6 +16,16 @@ author: Dan
 description: Web2 - JavaScript
 ---
 
+### 목록
+<a href="#one">1. Run JavaScript</a><br>
+<a href="#two">2. DataType</a><br>
+<a href="#three">3. Operator</a><br>
+<a href="#four">4. Statement</a><br>
+<a href="#five">5. Refactoring</a><br>
+<a href="#six">6. 문법 외 요소들</a>
+
+---
+<div id="one"></div>
 ## 1. Run JavaScript
 
 ### 1) < script> 태그
@@ -25,6 +35,7 @@ description: Web2 - JavaScript
 * 버튼을 클릭했을 때 경고창이 표시되는 등, 웹브라우저 위에서 일어날 수 있는 한정적 사건을 <span class="evidence-purple">**이벤트(Event)**</span>라고 한다.
 
 ---
+<div id="two"></div>
 ## 2. DataType
 : 자바스크립트의 데이터타입으로는 String, Number, Boolean 등이 있다.
 
@@ -67,6 +78,7 @@ var copiedArray = arrayName.slice(); // 배열 복사하기
 cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span class="evidence-purple">coworkers["data scientist"] = "dd";</span>
 
 ---
+<div id="three"></div>
 ## 3. Operator
 
 ### 1) Arithmetic operator
@@ -80,6 +92,7 @@ cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span c
 * <, >는 html에서 태그를 나타내므로 각각 <span class="evidence-purple">**&lt(less than), &gt(greater than)**</span>으로 쓴다.
 
 ---
+<div id="four"></div>
 ## 4. Statement
 
 ### 1) Conditional Statement
@@ -91,10 +104,12 @@ cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span c
 * 객체 안에 함수 넣기: <span class="evidence-purple">**objectname.functionname = function() { ;}**</span>
 
 ---
+<div id="five"></div>
 ## 5. Refactoring
 : 이미 작성한 코드를 중복 제거, 효율성 증진, 가독성 향상 등의 방향으로 개선하는 것  
 
---
+---
+<div id="six"></div>
 ## 6. 문법 외 요소들
 
 ### 1) Library

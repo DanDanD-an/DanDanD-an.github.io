@@ -16,6 +16,14 @@ author: Dan
 description: Web1 - HTML & Internet
 ---
 
+### 목록
+<a href="#one">1. 동영상 삽입하기: < ifame> 태그 이용</a><br>
+<a href="#two">2. 댓글 기능 추가하기</a><br>
+<a href="#three">3. 채팅 기능 추가하기</a><br>
+<a href="#four">4. 웹사이트 방문자 분석하기</a>
+
+---
+<div id="one"></div>
 ### 1. 동영상 삽입하기: < ifame> 태그 이용
 
 <p>
@@ -32,6 +40,7 @@ description: Web1 - HTML & Internet
 * youtube 동영상의 경우, **공유 > 소스코드** 탭에 표시되는 html 코드를 사용하면 된다!
 
 ---
+<div id="two"></div>
 ### 2. 댓글 기능 추가하기: <a href="https://disqus.com/" target="blank" title="html5 specification"><u>Disqus</u></a> 이용
 
 #### 1) Disqus 로그인 > admin
@@ -45,6 +54,7 @@ description: Web1 - HTML & Internet
 ![Markdowm Image][3]
 
 ---
+<div id="three"></div>
 ### 3. 채팅 기능 추가하기: <a href="https://www.tawk.to/" target="blank" title="html5 specification"><u>tawk</u></a> 이용
 
 : tawk를 이용하면 웹사이트 방문자와 실시간으로 채팅을 할 수 있다!
@@ -58,6 +68,7 @@ description: Web1 - HTML & Internet
 ![Markdowm Image][5]
 
 ---
+<div id="four"></div>
 ### 4. 웹사이트 방문자 분석하기: <a href="https://analytics.google.com" target="blank" title="html5 specification"><u>Google analytics</u></a> 사용
 : 방문자 수, 방문자 유입 경로, 방문자 이동 경로, 방문자 환경 등의 정보 제공<br>
 
