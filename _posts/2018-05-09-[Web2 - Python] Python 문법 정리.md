@@ -87,7 +87,7 @@ print('to {name}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
 * Boolean 값 반환
 
 #### 1.3.2. Membership Operator
-* <span class="evidence-skyblue>"**in**</span>: 어떠한 문자/문자열이 문자열 안에 있는지 확인하는 연산자. Boolean 값 반환. *ex) print('world' in 'Hello world') #True*
+* <span class="evidence-skyblue">**in**</span>: 어떠한 문자/문자열이 문자열 안에 있는지 확인하는 연산자. Boolean 값 반환. *ex) print('world' in 'Hello world') #True*
 * cf) **os.path.exists()**: 어떠한 파일이 존재하는지 확인하는 메소드. Boolean 값 반환<br>
 ex)
 {% highlight python %}
