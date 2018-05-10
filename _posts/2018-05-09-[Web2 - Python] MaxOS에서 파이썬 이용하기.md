@@ -17,7 +17,7 @@ description: Web2 - Ajax
 ---
 ## 1. Python 설치 & 실행하기
 
-### 1) <a href="https://www.python.org/">Python 공식 홈페이지</a>에서 python 다운로드
+### 1) <a href="https://www.python.org/" style="text-decoration:underline">Python 공식 홈페이지</a>에서 python 다운로드
 * 생활코딩의 Web2 - Python에서는 python3을 이용해 수업을 진행하였다.
 
 ### 2) 터미널 실행
@@ -27,7 +27,7 @@ description: Web2 - Ajax
 ![Markdown Image][1]
 
 #### 3-2) py파일로 파이썬 이용하기: python3 명령어 이용
-* py 파일을 생성한 후, 터미널에서 해당 폴더로 이동하여 **python3 pyFileName** 을 입력하면 파일 내 파이썬 코드들을 실행해 결과를 반환/출력해 준다.
+* py 파일을 생성한 후, 터미널에서 해당 폴더로 이동하여 <div class="evidence-purple">**python3 pyFileName**</div> 을 입력하면 파일 내 파이썬 코드들을 실행해 결과를 반환/출력해 준다.
 * 소스코드
 {% highlight python %}
 a = 3+4+5
@@ -38,9 +38,9 @@ print(b)
 ![Markdown Image][2]
 
 #### 3-3) py파일로 파이썬 이용하기: 더욱 간단한 버전
-* 더욱 간단하게 파이썬을 이용하는 명령어는 './pyFileName.py'이다. 그러나 이를 그대로 실행하면 다음과 같이 권한 문제가 발생한다.
+* 더욱 간단하게 파이썬을 이용하는 명령어는 <div class="evidence-yellow">**'./pyFileName.py'**</div>이다. 그러나 이를 그대로 실행하면 다음과 같이 권한 문제가 발생한다.
  ![Markdown Image][3]<br>
- * 이를 해결하기 위해 터미널에서 **sudo chmod a+x helloworld.py** 를 입력하여 모든 사용자에게 실행권한을 부여한다.
+ * 이를 해결하기 위해 터미널에서 <div class="evidence-purple">**sudo chmod a+x helloworld.py**</div> 를 입력하여 모든 사용자에게 실행권한을 부여한다.
  * 그리고 다시 위의 명령어를 실행하면 이번에는 아래와 같은 에러가 발생한다.
   ![Markdown Image][4]<br>
   * 이러한 문제를 해결하기 위해서는 py 파일 맨 위에 <div class="evidence-purple">**#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3**</div>를 추가해주면 운영체제가 해당 위치의 python3를 이용하여 py파일 실행한다. 그러나 이러한 방법은 이식성이 낮다는 문제점이 있다.
@@ -50,25 +50,25 @@ print(b)
   ---
 ## 2. Apache와 Python을 CGI로 연동하기
 
-### 1) /Applications/mampstack-7.1.16-0/apache2/conf/httpd.conf 파일에서 LoadModule cgid_module modules/mod_cgid.so를 활성화한다.(맨 앞의 # 지워주기)
+#### 1) /Applications/mampstack-7.1.16-0/apache2/conf/httpd.conf 파일에서 LoadModule cgid_module modules/mod_cgid.so를 활성화한다.(맨 앞의 # 지워주기)
 
-### 2) httpd.conf 파일에서 <Directory "/Applications/mampstack-7.1.16-0/apache2/htdocs"> 안에 아래 코드를 추가한다.
+#### 2) httpd.conf 파일에서 <Directory "/Applications/mampstack-7.1.16-0/apache2/htdocs"> 안에 아래 코드를 추가한다.
 * 소스 코드
 {% highlight html %}
 <Files *.py>
       Options ExecCGI
       AddHandler cgi-script .py
-    </Files>
-{% endhighlight %}*
+</Files>
+{% endhighlight %}
 
-### 3) 수정 사항을 반영하기 위해  서버 전원을 껐다가 다시 켠다.
+#### 3) 수정 사항을 반영하기 위해  서버 전원을 껐다가 다시 켠다.
 
-### 4) 에러 화면이 나오면 py파일의 맨 위에 아래와 같은 코드를 추가한다.
+#### 4) 에러 화면이 나오면 py파일의 맨 위에 아래와 같은 코드를 추가한다.
 {% highlight html %}
 print("content-type:text/html; charset=utf-8\n")
 {% endhighlight %}
 
-### 5) 다시 웹페이지를 리로드하면 다음과 같이 py파일의 결과가 출력된다.
+#### 5) 다시 웹페이지를 리로드하면 다음과 같이 py파일의 결과가 출력된다.
   ![Markdown Image][6]<br>
 
 ---
