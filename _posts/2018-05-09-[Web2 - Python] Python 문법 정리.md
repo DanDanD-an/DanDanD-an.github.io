@@ -17,18 +17,19 @@ description: Web2 - Python
 ---
 ### 목록
 <a href="#one">1. DataType</a><br>
-<a href="#two">2. Statement</a><br>
-<a href="#three">3. List & Containers</a><br>
-<a href="#four">4. Fuction</a><br>
-<a href="#five">5. Module</a><br>
-<a href="#six">6. 문법 외 요소들</a><br>
+<a href="#two">2. Operator</a><br>
+<a href="#three">3. Statement</a><br>
+<a href="#four">4. List & Containers</a><br>
+<a href="#five">5. Function</a><br>
+<a href="#six">6. Module</a><br>
+<a href="#seven">7. 기타</a><br>
 
 ---
 <div id="one"></div>
 ## 1. DataType
 
 ### 1.1. Number
-: +, -, * , /, //, %, -x, +x, abs(x), int(x) 등을 이용해 처리
+: +, -, * , /, //, %, -x, +x, abs(x), int(x) 등 산술연산자를 이용해 처리
 <div class="breaker"></div>
 ### 1.2. String
 
@@ -82,12 +83,24 @@ print('to {name}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
 ### 1.3. Boolean
 : True / False.  이 둘에는 다른 값을 설정할 수 없다.
 
-#### 1.3.1. Comparison Operator
+<div class="breaker"></div>
+### 1.4. List
+
+---
+<div id="two"></div>
+## 2. Operator
+
+### 2.1. Arithmetic Operator
+: +, -, * , /, //, %, -x, +x, abs(x), int(x) 등
+
+<div class="breaker"></div>
+### 2.2. Comparison Operator
 * ==, <, >
 * Boolean 값 반환
 
-#### 1.3.2. Membership Operator
-* <span class="evidence-skyblue">**in**</span>: 어떠한 문자/문자열이 문자열 안에 있는지 확인하는 연산자. Boolean 값 반환. *ex) print('world' in 'Hello world') #True*
+<div class="breaker"></div>
+### 2.3. Membership Operator
+* <span class="evidence-purple">**in**</span>: 어떠한 문자/문자열이 문자열 안에 있는지 확인하는 연산자. Boolean 값 반환.
 * cf) **os.path.exists()**: 어떠한 파일이 존재하는지 확인하는 메소드. Boolean 값 반환<br>
 ex)
 {% highlight python %}
@@ -95,26 +108,55 @@ import os.path
 print(os.path.exists('boolean.py'))
 {% endhighlight %}
 
----
-<div id="two"></div>
-## 2. Statement
-
+<div class="breaker"></div>
+### 2.4. Logical Operator
+: and, or, not
 
 ---
 <div id="three"></div>
-## 3. List & Containers
+## 3. Statement
+
+### 3.1. Conditional Statement
+: if ~ else ~, **if ~ elif ~ else ~**. 중첩 가능
+
+* 예시 코드
+{% highlight python %}
+user_id = input('id?')
+user_pwd = input('password?')
+
+if user_id == 'egoing':
+    if user_pwd == '111111':
+        print('Hello master')
+    else:
+        print('Who are you?')
+else:
+    print('Who are you?')
+{% endhighlight %}
+
+### 3.2. Loop
 
 ---
 <div id="four"></div>
-## 4. Function
+## 4. List & Containers
 
 ---
-<div id="five"></div>
-## 5. Module
+<div id="fiver"></div>
+## 5. Function
 
 ---
 <div id="six"></div>
-## 6. 문법 외 요소
+## 6. Module
 
-### 1. 주석
+---
+<div id="seven"></div>
+## 7. 기타
+
+### 7.1. 주석
 : #
+
+### 7.2. 들여쓰기
+: 파이썬은 같은 블록 요소를 들여쓰기로 구분하기 때문에, 들여쓰기를 할 때는 똑같은 형식(탭 또는 스페이스)을 이용해야 한다.
+
+### 7.3. 파일 읽기
+* <span class="evidence-purple">**f = open('workfile', 'w')**</span>
+* 파일을 작성/수정할 때는 'w', 파일을 읽기 전용으로 열 때는 'r', appending 할때는 'a'

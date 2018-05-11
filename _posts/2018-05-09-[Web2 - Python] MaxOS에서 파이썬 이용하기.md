@@ -27,7 +27,7 @@ description: Web2 - Python
 * 터미널에 <span class="evidence-purple">**python3**</span> 명령어를 이용하면 python을 실행할 수 있다. 이후 python 사용을 종료하려면 **exit()** 를 입력한다.<br>
 ![Markdown Image][1]
 
-#### 3-2) py파일로 파이썬 이용하기: python3 명령어 이용
+### 3-2) py파일로 파이썬 이용하기: python3 명령어 이용
 * py 파일을 생성한 후, 터미널에서 해당 폴더로 이동하여 <span class="evidence-purple">**python3 pyFileName**</span> 을 입력하면 파일 내 파이썬 코드들을 실행해 결과를 반환/출력해 준다.
 * 소스코드
 {% highlight python %}
@@ -38,7 +38,7 @@ print(b)
 <br>
 ![Markdown Image][2]
 
-#### 3-3) py파일로 파이썬 이용하기: 더욱 간단한 버전
+### 3-3) py파일로 파이썬 이용하기: 더욱 간단한 버전
 * 더욱 간단하게 파이썬을 이용하는 명령어는 <span class="evidence-purple">**'./pyFileName.py'**</span>이다. 그러나 이를 그대로 실행하면 다음과 같이 권한 문제가 발생한다.<br>
 ![Markdown Image][3]<br><br>
  * 이를 해결하기 위해 터미널에서 <span class="evidence-purple">**sudo chmod a+x helloworld.py**</span> 를 입력하여 모든 사용자에게 실행권한을 부여한다.

@@ -15,3 +15,5 @@ categories: Web
 author: Dan
 description: Web2 - Python
 ---
+
+## 1. CGI로 홈페이지 구현하기
