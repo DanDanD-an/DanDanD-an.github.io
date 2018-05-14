@@ -19,10 +19,9 @@ description: Web2 - Python
 <a href="#one">1. DataType</a><br>
 <a href="#two">2. Operator</a><br>
 <a href="#three">3. Statement</a><br>
-<a href="#four">4. List & Containers</a><br>
-<a href="#five">5. Function</a><br>
-<a href="#six">6. Module</a><br>
-<a href="#seven">7. 기타</a><br>
+<a href="#four">4. Function</a><br>
+<a href="#five">5. Module</a><br>
+<a href="#six">6. 기타</a><br>
 
 ---
 <div id="one"></div>
@@ -85,6 +84,19 @@ print('to {name}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
 
 <div class="breaker"></div>
 ### 1.4. List
+* 리스트는 순서가 있다!(Sequence Type)
+* 리스트를 만드는 방법: listName = [val1, val2, val3] *ex) s = [1, 'four', 9, 16, 25]*
+* 리스트의 **인덱스**: 인덱스를 이용해 리스트의 element를 호출할 수 있다. *ex) s[1]*
+* 리스트의 길이: <span class="evidence-purple">**len(listName)**</span>
+* 리스트의 element 지우기: <span class="evidence-purple">**del listName[n]**</span> *ex) del s[2] => 결과: s = [1, 'four', 16, 25]*
+* 리스트 끝에 element 추가하기: <span class="evidence-purple">**listName.append(val)**</span> *ex) s.append('1')*
+
+<div class="breaker"></div>
+### 1.5. Dict
+* Mapping types
+* 값을 이름으로 호출할 수 있음.
+* 선언 방법: <span class="evidence-purple">**dictName = {'key1': 'val1', 'key2': 'val2'}**</span> *ex) a = {'name': 'Dan', 'address': 'Seoul'}*
+* 이름으로 호출하기: <span class="evidence-purple">**dictName['key']**</span> *ex) a['name']*
 
 ---
 <div id="two"></div>
@@ -112,6 +124,11 @@ print(os.path.exists('boolean.py'))
 ### 2.4. Logical Operator
 : and, or, not
 
+### 2.5. Sequence Operator
+* **+**: 문자열 또는 리스트 등 연결 *ex) "a"+"b" -> 'ab', ['a']+['b'] -> ['a', 'b']*
+* **len**: 길이
+* **capitalize()**: 앞글자 대문자로 변환. str에서만. *ex) 'dan'.capitalize() -> 'Dan'*
+
 ---
 <div id="three"></div>
 ## 3. Statement
@@ -134,29 +151,58 @@ else:
 {% endhighlight %}
 
 ### 3.2. Loop
+* 반복문 선언 방법1: <span class="evidence-purple">**for target_list in expression_list" :**</span>
+* ex1)
+{% highlight raw %}
+for value in ['a', 'b', 'c']:
+  print(value)
+{% endhighlight %}
+* 반복문 선언 방법2: <span class="evidence-purple">**for i in range(n):**</span>
+* ex2)
+{% highlight raw %}
+for value in range(10):
+  print(value)
+{% endhighlight %}
 
 ---
 <div id="four"></div>
-## 4. List & Containers
+## 4. Function
+* 함수 선언 방법: <span class="evidence-purple">**def func_name(parameter):**</span>
+* 함수 호출 방법: <span class="evidence-purple">**func_name(argument)**</span>
 
 ---
-<div id="fiver"></div>
-## 5. Function
+<div id="five"></div>
+## 5. Module
+* 서로 연관된 변수와 함수 그리고 객체를 정리 정돈하는 도구
+* 새로운 py 파일로 서로 연관된 변수나 함수 등을 묶고, 그 파일을 import해서 사용
+<br>
+* 모듈 가져오기1: <span class="evidence-purple">**import module_name**</span>
+* 모듈 안 함수 이용하기1: <span class="evidence-purple">**module_name.func_name()**</span>
+<br>
+* 모듈 가져오기2: <span class="evidence-purple">**from module_name import func_name**</span>
+* 모듈 안 함수 이용하기2: <span class="evidence-purple">**func_name()**</span> - 앞에 모듈 이름을 붙이지 않아도 된다.
 
 ---
 <div id="six"></div>
-## 6. Module
+## 6. 기타
 
----
-<div id="seven"></div>
-## 7. 기타
-
-### 7.1. 주석
+### 6.1. 주석
 : #
 
-### 7.2. 들여쓰기
+### 6.2. 들여쓰기
 : 파이썬은 같은 블록 요소를 들여쓰기로 구분하기 때문에, 들여쓰기를 할 때는 똑같은 형식(탭 또는 스페이스)을 이용해야 한다.
 
-### 7.3. 파일 읽기
+### 6.3. 파일 읽기
 * <span class="evidence-purple">**f = open('workfile', 'w')**</span>
 * 파일을 작성/수정할 때는 'w', 파일을 읽기 전용으로 열 때는 'r', appending 할때는 'a'
+
+### 6.4. form
+* 사용자의 정보를 서버로 전송하는 장치. 사용자로부터 정보를 전달받는 양식
+
+### 6.5. package & Pypi
+* **package**: 우리가 만드는 소프트웨어에 부품으로 사용되는 작은 소프트웨어.
+* **Pypi**: 파이썬 이용자들이 이용할 수 있는 package 목록
+* pypi 설치방법: <span class="evidence-purple">**pip3 install program_name()**</span>
+* 
+
+---
