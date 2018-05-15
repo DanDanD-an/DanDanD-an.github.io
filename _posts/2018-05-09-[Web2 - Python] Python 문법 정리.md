@@ -203,6 +203,5 @@ for value in range(10):
 * **package**: 우리가 만드는 소프트웨어에 부품으로 사용되는 작은 소프트웨어.
 * **Pypi**: 파이썬 이용자들이 이용할 수 있는 package 목록
 * pypi 설치방법: <span class="evidence-purple">**pip3 install program_name()**</span>
-* 
 
 ---
