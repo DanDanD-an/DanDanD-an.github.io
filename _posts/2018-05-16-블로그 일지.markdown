@@ -1,5 +1,5 @@
 ---
-title: "블로그 일지"
+title: "Blog Dev log"
 layout: post
 date: 2018-05-16 13:29
 tag: jekyll
@@ -8,7 +8,7 @@ image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
-description: 블로그 일지
+description: Blog Dev log
 category: project
 author: Dan
 externalLink: false
@@ -57,4 +57,6 @@ externalLink: false
 ## 앞으로 할 일
 
 * 검색 기능 추가
-* Blog 페이지에서 포스트 제목 근처에 카테고리별로 색깔 태그 표시
+* Blog 페이지에서 포스트 제목 앞에 카테고리별로 색깔 태그 표시
+* scroll to top 기능 구현
+* 이미지 확대 기능 구현
