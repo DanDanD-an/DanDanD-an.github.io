@@ -1,0 +1,60 @@
+---
+title: "블로그 일지"
+layout: post
+date: 2018-05-16 13:29
+tag: jekyll
+star: true
+image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
+headerImage: false
+projects: true
+hidden: true # don't count this post in blog pagination
+description: 블로그 일지
+category: project
+author: Dan
+externalLink: false
+---
+
+## Apr 18
+
+### 0413
+* Create Github Blog with jekyll
+* Apply Indigo theme
+* Modify config.yml
+* Change profile image
+* Change main color to #ff1164
+* Do posting test
+* Change font-family & font size
+
+### 0416 - 0417
+* Add categories
+* Update README.md
+
+### 0425-0426
+* Add Disqus
+* Modify letter-spacing
+* Add google analytics
+
+### 0427
+* Hide some posts
+* Remove a tag underline
+* Apply Web font
+* Remove show-author
+
+---
+## May 18
+
+### 0503
+* Change line-height
+* Add evidence-yellow & evidence-purple
+
+### 0509
+* Add hash to posts
+
+### 0510
+* Add evidence-skyblue
+
+---
+## 앞으로 할 일
+
+* 검색 기능 추가
+* Blog 페이지에서 포스트 제목 근처에 카테고리별로 색깔 태그 표시
