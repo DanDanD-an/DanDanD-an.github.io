@@ -17,11 +17,11 @@ externalLink: false
 ## Apr 18
 
 ### 0413
-* Create Github Blog with jekyll
-* Apply Indigo theme
+* Create Github Blog with Jekyll
+* Apply <a href="http://koppl.in/indigo/>Indigo Minimalist Jekyll Template</a>
 * Modify config.yml
 * Change profile image
-* Change main color to #ff1164
+* Change main color to <style="color:#ff1164">#ff1164</style>
 * Do posting test
 * Change font-family & font size
 
@@ -45,13 +45,13 @@ externalLink: false
 
 ### 0503
 * Change line-height
-* Add evidence-yellow & evidence-purple
+* Add <span class="evidence-yellow">evidence-yellow</span> & <span class="evidence-purple">evidence-purple</span>
 
 ### 0509
 * Add hash to posts
 
 ### 0510
-* Add evidence-skyblue
+* Add <span class="evidence-skyblue">evidence-skyblue</span>
 
 ---
 ## 앞으로 할 일
