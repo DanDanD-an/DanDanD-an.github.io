@@ -9,7 +9,7 @@ headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
 description: Blog Dev log
-category: project
+category: Project
 author: Dan
 externalLink: false
 ---
@@ -18,10 +18,10 @@ externalLink: false
 
 ### 0413
 * Create Github Blog with Jekyll
-* Apply <a href="http://koppl.in/indigo/>Indigo Minimalist Jekyll Template</a>
+* Apply <a href="http://koppl.in/indigo/">Indigo Minimalist Jekyll Template</a>
 * Modify config.yml
 * Change profile image
-* Change main color to <style="color:#ff1164">#ff1164</style>
+* Change main color to <span style="color:#ff1164">#ff1164</span>
 * Do posting test
 * Change font-family & font size
 
