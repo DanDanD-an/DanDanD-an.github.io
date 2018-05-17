@@ -37,7 +37,7 @@ externalLink: false
 ### 0427
 * Hide some posts
 * Remove a tag underline
-* Apply Web font
+* Apply Web font-NanumSquareRound
 * Remove show-author
 
 ---
