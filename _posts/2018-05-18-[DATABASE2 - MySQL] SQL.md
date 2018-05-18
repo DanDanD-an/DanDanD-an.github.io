@@ -46,7 +46,7 @@ mysql> CREATE TABLE tbl(
 * **NULL or NOT NULL**: <span class="evidence">꼭 필요한 값이면 NOT NULL, 그렇지 않다면 NULL을 입력</span>
 * **PRIMARY KEY()**: <span class="evidence">성능 향상과 중복 방지를 위해 **메인 키 설정**</span>
 
-* ex)
+* ex)<br>
 ![Markdown Image][2]
 * **AUTO_INCREMENT**: 자동으로 값이 1씩 증가
 
@@ -58,7 +58,7 @@ mysql> CREATE TABLE tbl(
 mysql> SHOW TABLES;
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][3]
 
 #### 1.3.2. DESC: 특정 table 구조 확인
@@ -66,7 +66,7 @@ mysql> SHOW TABLES;
 mysql> DESC table_name;
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][4]
 
 ---
@@ -79,7 +79,7 @@ mysql> INSERT INTO table_name (column1, column2, ...)
 VALUES (value1, value2, ...);
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][5]
 * **NOW()**: 현재 시간 입력 함수
 
@@ -89,7 +89,7 @@ VALUES (value1, value2, ...);
 mysql> SELECT * FROM table_name;
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][6]
 
 ---
@@ -101,7 +101,7 @@ mysql> SELECT * FROM table_name;
 mysql> SELECT * FROM table_name;
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][7]
 
 <div class="breaker"></div>
@@ -110,7 +110,7 @@ mysql> SELECT * FROM table_name;
 mysql> SELECT select_expr  FROM table_name;
 {% endhighlight %}
 
-* ex)
+* ex)<br>
 ![Markdown Image][8]
 
 <div class="breaker"></div>
@@ -119,7 +119,7 @@ mysql> SELECT select_expr  FROM table_name;
 mysql> SELECT select_expr FROM table_name WHERE where_condition;
 {% endhighlight %}
 
-* ex) author가 'Dan'인 데이터만 출력
+* ex) author가 'Dan'인 데이터만 출력<br>
 ![Markdown Image][9]
 
 <div class="breaker"></div>
@@ -128,7 +128,7 @@ mysql> SELECT select_expr FROM table_name WHERE where_condition;
 mysql> SELECT select_expr ORDER BY {col_name | expr | position};
 {% endhighlight %}
 
-* ex) id값 내림차순 정렬
+* ex) id값 내림차순 정렬<br>
 ![Markdown Image][10]
 
 <div class="breaker"></div>
@@ -137,7 +137,7 @@ mysql> SELECT select_expr ORDER BY {col_name | expr | position};
 mysql> SELECT select_expr LIMIT n;
 {% endhighlight %}
 
-* ex) 조건 만족하는 데이터 2개 출력
+* ex) 조건 만족하는 데이터 2개 출력<br>
 ![Markdown Image][11]
 
 
