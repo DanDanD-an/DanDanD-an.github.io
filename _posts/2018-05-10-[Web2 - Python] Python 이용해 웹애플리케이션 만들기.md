@@ -7,7 +7,7 @@ headerImage: false
 tag:
 - Web
 - Python
-- Web2 - Python
+- Webn
 - 강의노트
 star: false
 category: blog

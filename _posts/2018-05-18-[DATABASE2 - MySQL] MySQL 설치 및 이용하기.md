@@ -7,7 +7,7 @@ headerImage: false
 tag:
 - Database
 - MySQL
-- DATABASE2 - MySQL
+- DATABASE
 - 강의노트
 star: false
 category: blog

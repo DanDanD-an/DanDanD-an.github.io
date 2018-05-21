@@ -7,7 +7,7 @@ headerImage: false
 tag:
 - Web
 - HTML
-- Web1 - HTML & Internet
+- Webn
 - 강의노트
 star: false
 category: blog

@@ -7,7 +7,7 @@ headerImage: false
 tag:
 - Web
 - JavaScript
-- Web2 - JavaScript
+- Webn
 - 강의노트
 star: false
 category: blog

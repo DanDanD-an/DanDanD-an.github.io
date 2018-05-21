@@ -8,7 +8,7 @@ tag:
 - Web
 - JavaScript
 - Ajax
-- Web3 - Ajax
+- Webn
 - 강의노트
 star: false
 category: blog
