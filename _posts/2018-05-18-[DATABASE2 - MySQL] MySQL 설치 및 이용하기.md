@@ -74,7 +74,38 @@ mysql> SHOW DATABASES;
 mysql> USE database_name;
 {% endhighlight %}
 
+<div class="breaker"></div>
+### 2.3. MySQL 클라이언트 사용: MySQL Workbench
+* GUI 기반
+
+#### 1) MySQL Workbench 다운로드
+* https://dev.mysql.com/downloads/workbench/ ← 이곳에서 다운로드
+
+#### 2) 다운로드 완료 후 MySQL Workbench 실행
+
+#### 3) 첫 화면에서 '+' 버튼 클릭 > connection name 등 설정
+![Markdown Image][4]
+
+#### 4) Test Connection > 'Successfully Connected'
+![Markdown Image][5]
+
+#### 5) 만들어진 서버로 들어가 schema 생성
+
+#### 6) schema 변경 후 table 추가 > 필요한 정보 입력
+![Markdown Image][6]
+
+#### 7) SQL script review
+![Markdown Image][7]
+
+#### 8) 생성한 table을 클릭해 값 입력
+![Markdown Image][8]
+
 ---
 [1]: /assets/images/스크린샷2018-05-18-1.jpg
 [2]: /assets/images/스크린샷2018-05-18-2.jpg
 [3]: /assets/images/스크린샷2018-05-18-3.jpg
+[4]: /assets/images/스크린샷2018-05-21-5.jpg
+[5]: /assets/images/스크린샷2018-05-21-6.jpg
+[6]: /assets/images/스크린샷2018-05-21-8.jpg
+[7]: /assets/images/스크린샷2018-05-21-9.jpg
+[8]: /assets/images/스크린샷2018-05-21-10.jpg
