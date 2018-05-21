@@ -346,7 +346,7 @@ mysql> DROP USER user_or_role;
 [9]: /assets/images/스크린샷2018-05-18-12.jpg
 [10]: /assets/images/스크린샷2018-05-18-13.jpg
 [11]: /assets/images/스크린샷2018-05-18-14.jpg
-[12]: /assets/images/스크린샷2018-05-21-1.jpg
-[13]: /assets/images/스크린샷2018-05-21-2.jpg
-[14]: /assets/images/스크린샷2018-05-21-3.jpg
-[15]: /assets/images/스크린샷2018-05-21-4.jpg
+[12]: /assets/images/스크린샷2018-05-21-1.jpg
+[13]: /assets/images/스크린샷2018-05-21-2.jpg
+[14]: /assets/images/스크린샷2018-05-21-3.jpg
+[15]: /assets/images/스크린샷2018-05-21-4.jpg
