@@ -53,6 +53,10 @@ externalLink: false
 ### 0510
 * Add <span class="evidence-skyblue">evidence-skyblue</span>
 
+
+### 0521
+* Merge some tags
+
 ---
 ## 앞으로 할 일
 
