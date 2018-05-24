@@ -5,12 +5,14 @@ title: Categories
 ---
 
 <section class="list">
-    <h1 class="title">Categories</h1>
-    <div style="text-align:right">
-    <h4 class="blog-header">View by <a href="/categories">Categories</a> / <a href="/tags">Tags</a></h4>
-    </div>
+  <div style="text-align:right">
+  <h4 class="blog-header">View by <a href="/tags">Tags</a></h4>
+  </div>
 
-    <p></p>
+  <p></p>
+  <p></p>
+    <h1 class="title">Categories</h1>
+
 
     {% assign tags_list = site.categories %}
 
