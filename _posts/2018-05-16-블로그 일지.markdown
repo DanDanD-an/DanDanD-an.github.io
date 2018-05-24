@@ -53,9 +53,11 @@ externalLink: false
 ### 0510
 * Add <span class="evidence-skyblue">evidence-skyblue</span>
 
-
 ### 0521
 * Merge some tags
+
+### 0524
+* Add 'View by Categories/Tags' to categories & tags page
 
 ---
 ## 앞으로 할 일

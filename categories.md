@@ -6,7 +6,7 @@ title: Categories
 
 <section class="list">
   <div style="text-align:right">
-  <h3 class="blog-header">View by <a href="/tags">Tags</a></h3>
+  <h3 class="blog-header">>View by <a href="/tags">Tags</a></h3>
   </div>
 
   <p></p>
