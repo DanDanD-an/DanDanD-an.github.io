@@ -97,6 +97,12 @@ mysql> SELECT * FROM table_name;
 * ex)<br>
 ![Markdown Image][6]
 
+<div class="breaker"></div>
+### 2.3. 다른 방법으로 raw 추가하기
+{% highlight sql %}
+mysql> ALTER TABLE table_name ADD COLUMN col_name ...;
+{% endhighlight %}
+
 ---
 <div id="three"></div>
 ## 3. Read: SELECT
