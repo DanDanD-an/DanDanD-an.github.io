@@ -6,13 +6,13 @@ title: Categories
 
 <section class="list">
   <div style="text-align:right">
-  <h4 class="blog-header">View by <a href="/tags">Tags</a></h4>
+  <h3 class="blog-header">View by <a href="/tags">Tags</a></h3>
   </div>
 
   <p></p>
   <p></p>
     <h1 class="title">Categories</h1>
-
+    <p></p>
 
     {% assign tags_list = site.categories %}
 
