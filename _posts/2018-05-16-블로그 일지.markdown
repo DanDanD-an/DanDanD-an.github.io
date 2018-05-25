@@ -59,6 +59,9 @@ externalLink: false
 ### 0524
 * Add 'View by Categories/Tags' to categories & tags page
 
+### 0525
+* Add TOP button
+
 ---
 ## 앞으로 할 일
 
