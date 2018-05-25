@@ -22,8 +22,8 @@ description: WEB3 - PHP & MySQL
 <a href="#four">4. Update</a><br>
 <a href="#five">5. Delete</a><br>
 <a href="#six">6. 관계형데이터베이스의 도입</a><br>
-<a href="#seven">7. 보안</a><br>
-<a href="#eight">8. 사용자 관리</a><br>
+<a href="#seven">7. Table 표현하기</a><br>
+<a href="#eight">8. 보안</a><br>
 
 ---
 <div id="one"></div>
@@ -300,9 +300,103 @@ if(isset($_ GET['id'])) {
 
 ---
 <div id="seven"></div>
-## 7. 보안
+## 7. Table 표현하기
 
-### 7.1. 입력 공격 차단(filtering)
+### 7.1. Table 읽기
+
+* **< table>**: table 표현 태그
+* **< tr>**: table raw. table의 행  표현
+* **< td>**: column
+* 사용 예시
+{% highlight php %}
+<?php
+$conn = mysqli_connect(
+'localhost',
+'root',
+'111111',
+'opentutorials');
+?>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WEB</title>
+</head>
+<body>
+  <h1><a href="index.php">WEB</a></h1>
+  <p><a href="index.php">topic</a></p>
+  <table border="1">
+    <tr>
+      <td>id</td><td>name</td><td>profile</td>
+      <?php
+      $sql = "SELECT * FROM author";
+      $result = mysqli_query($conn, $sql);
+      while($row = mysqli_fetch_array($result)){
+        $filtered = array(
+          'id'=>htmlspecialchars($row['id']),
+          'name'=>htmlspecialchars($row['name']),
+          'profile'=>htmlspecialchars($row['profile'])
+        );
+        ?>
+        <tr>
+          <td><?=$filtered['id']?></td>
+          <td><?=$filtered['name']?></td>
+          <td><?=$filtered['profile']?></td>
+        </tr>
+        <?php
+      }
+      ?>
+    </tr>
+  </table>
+</body>
+</html>
+{% endhighlight %}
+
+<div class="breaker"></div>
+### 7.2. Table 생성
+
+* 사용 예시
+{% highlight php%}
+<?php
+// connect
+$conn = mysqli_connect(
+'localhost',
+'root',
+'111111',
+'opentutorials');
+
+// filtering
+$filtered = array(
+  'name'=>mysqli_real_escape_string($conn, $_ POST['name']),
+  'profile'=>mysqli_real_escape_string($conn, $_ POST['profile'])
+);
+// query
+$sql = "
+  INSERT INTO author
+    (name, profile)
+    VALUES(
+        '{$filtered['name']}',
+        '{$filtered['profile']}'
+    )
+";
+$result = mysqli_query($conn, $sql);
+
+// sql 문 실행 결과 출력
+if($result === false){
+  echo '저장하는 과정에서 문제가 생겼습니다. 관리자에게 문의해주세요';
+  error_log(mysqli_error($conn));
+} else {
+  // 성공적으로 생성한 후에는 다시 author_mysql.php 페이지로 돌아감
+  header('Location: author_mysql.php');
+}
+?>
+{% endhighlight%}
+
+---
+<div id="eight"></div>
+## 8. 보안
+
+### 8.1. 입력 공격 차단(filtering)
 : sql문을 문자열로 바꾸는 **mysqli_real_escape_string()** 을 이용
 
 * 사용 예시
@@ -314,12 +408,12 @@ $sql = "SELECT * FROM topic WHERE id={$filtered_id}";
 {% endhighlight %}
 
 <div class="breaker"></div>
-### 7.2. SQL 주입(Injection)의 차단
+### 8.2. SQL 주입(Injection)의 차단
 
 * **--**: 주석. 주입 공격에서 앞에 '--'를 붙이는 것만으로 미리 작성해둔 SQL문을 모두 무력화시킬 수 있다.
 
 <div class="breaker"></div>
-### 7.3. SQL 츨력 공격(Cross Site Scripting)의 차단(escaping)
+### 8.3. SQL 츨력 공격(Cross Site Scripting)의 차단(escaping)
 
 * 사용자가 악의적 목적으로 JavaScript 코드를 주입하는 것을 방지
 * **htmlspecialchars() 이용**
