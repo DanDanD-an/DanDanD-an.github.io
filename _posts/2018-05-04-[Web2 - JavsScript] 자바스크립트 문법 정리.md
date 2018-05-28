@@ -116,7 +116,10 @@ cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span c
 * **라이브러리**(library): 프로그램을 만들 때 필요한 부품과 같은 소프트웨어를 모아놓은 것.
 
 #### (1) jQuery
-* js의 라이브러리 중 가장 유명한 **jQuery** 는 다운로드 혹은 <span class="evidence-purple">< script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></ script></span> 을 추가하여 사용할 수 있다.
+* js의 라이브러리 중 가장 유명한 **jQuery** 는 다운로드 혹은 <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> 을 추가하여 사용(CDN 이용)할 수 있다.
 * jQuery 사용하기: <span class="evidence-purple">**$(selector).action**</span> <br>
  cf) jQuery에서 CSS 사용하기: $(selector).css()
 

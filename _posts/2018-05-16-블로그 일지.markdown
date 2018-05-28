@@ -62,10 +62,12 @@ externalLink: false
 ### 0525
 * Add TOP button
 
+### 0526
+* TOP button - fade in/out
+
 ---
 ## 앞으로 할 일
 
 * 검색 기능 추가
 * Blog 페이지에서 포스트 제목 앞에 카테고리별로 색깔 태그 표시
-* scroll to top 기능 구현
 * 이미지 확대 기능 구현
