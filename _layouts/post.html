@@ -9,7 +9,6 @@ a#MOVE_TOP_BTN {
     position: fixed;
     right: 2%;
     bottom: 50px;
-    display: none;
     z-index: 999;
 }
 </style>
@@ -17,7 +16,7 @@ a#MOVE_TOP_BTN {
 <script>
     $(function() {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 200) {
+            if ($(this).scrollTop() > 20) {
                 <style> a#MOVE_TOP_BTN {display: inline;}</style>
             } else {
               <style> a#MOVE_TOP_BTN {display: none;}</style>
