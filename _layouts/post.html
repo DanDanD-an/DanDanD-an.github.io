@@ -9,7 +9,7 @@ a#MOVE_TOP_BTN {
     position: fixed;
     right: 2%;
     bottom: 50px;
-    display: inline;
+    display: none;
     z-index: 999;
 }
 </style>
@@ -18,9 +18,9 @@ a#MOVE_TOP_BTN {
     $(function() {
         $(window).scroll(function() {
             if ($(this).scrollTop() > 200) {
-                $('#MOVE_TOP_BTN').fadeIn();
+                <style> a#MOVE_TOP_BTN {display: inline;}</style>
             } else {
-                $('#MOVE_TOP_BTN').fadeOut();
+              <style> a#MOVE_TOP_BTN {display: none;}</style>
             }
         });
 
