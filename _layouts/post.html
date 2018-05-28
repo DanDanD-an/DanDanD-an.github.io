@@ -31,13 +31,13 @@ function scrollUp()
 	setTimeout('scrollUp()',scrollUpDelay);
 }
 
-$(document).ready(function() {
-	$(window).scroll(function() {
-		if($(document).scrollTop() > 300) {
-			$('.scrollUp').fadeIn();
+jQuery(document).ready(function() {
+	jQuery(window).scroll(function() {
+		if(jQuery(document).scrollTop() > 300) {
+			jQuery('.scrollUp').fadeIn();
       console.log('a');
 		} else {
-			$('.scrollUp').fadeOut();
+			jQuery('.scrollUp').fadeOut();
 		};
 	});
 });
