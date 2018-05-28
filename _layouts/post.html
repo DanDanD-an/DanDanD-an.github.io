@@ -10,7 +10,10 @@ var scrolled;
 var lastScrollTop = 0;
 
 $(window).scroll(function() {
-  scrolled = true; });
+  scrolled = true;
+  var scrollValue = $(document).scrollTop();
+  console.log(scrollValue);
+});
 
 checkScroll(function() {
   if (scrolled) {
