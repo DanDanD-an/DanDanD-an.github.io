@@ -15,22 +15,41 @@ a#MOVE_TOP_BTN {
 </style>
 
 <script>
-    $(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 560) {
-                <style> a#MOVE_TOP_BTN {display: inline;}</style>
-            } else {
-              <style> a#MOVE_TOP_BTN {display: none;}</style>
-            }
-        });
+var scrolled;
+var lastScrollTop = 0;
 
-        $("#MOVE_TOP_BTN").click(function() {
-            $('html, body').animate({
-                scrollTop : 0
-            }, 400);
-            return false;
-        });
-    });
+$(window).scroll(function() {
+  scrolled = true; });
+
+checkScroll(function() {
+  if (scrolled) {
+    displayTop();
+    goToTop();
+    scrolled = false;
+    }
+  }, 250);
+
+function display() {
+  var st = $(this).scrollTop();
+
+  if (st > lastScrollTop && st > 100){
+      $("MOVE_TOP_BTN").fadeIn();
+    }
+  else {
+    $("MOVE_TOP_BTN").fadeOut();
+  }
+
+    lastScrollTop = st;
+}
+
+function goToTop() {
+  $("#MOVE_TOP_BTN").click(function() {
+      $('html, body').animate({
+          scrollTop : 0
+      }, 400);
+      return false;
+  });
+}
 </script>
 
 {% if page.image and page.headerImage %}
