@@ -3,59 +3,45 @@ layout: page
 ---
 
 <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
-<a id="MOVE_TOP_BTN" href="#">TOP</a>
 
-<script>
-var scrolled;
-var lastScrollTop = 0;
-
-$(window).scroll(function() {
-  scrolled = true;
-  var scrollValue = $(document).scrollTop();
-  console.log(scrollValue);
-});
-
-checkScroll(function() {
-  if (scrolled) {
-    displayTop();
-    goToTop();
-    scrolled = false;
-    }
-  }, 250);
-
-function display() {
-  var st = $(this).scrollTop();
-
-  if (st > lastScrollTop && st > 600){
-      $("MOVE_TOP_BTN").css(display:inline);
-      alert("scroll");
-    }
-  else {
-      $("MOVE_TOP_BTN").css(display:none);
-  }
-
-    lastScrollTop = st;
-}
-
-function goToTop() {
-  $("#MOVE_TOP_BTN").click(function() {
-      $('html, body').animate({
-          scrollTop : 0
-      }, 400);
-      return false;
-  });
-}
-</script>
-
+<div class="scrollUp" onclick="javascript:scrollUp();"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 <style>
 a#MOVE_TOP_BTN {
     position: fixed;
     right: 2%;
     bottom: 50px;
-    display:
+    display: none;
     z-index: 999;
+    font-size: 13px;
+    line-height: 100%;
+    text-align: center;
+    color: #ff1164;
 }
 </style>
+
+<script>
+var scrollUpDelay = 1;
+var scrollUpSpeed = 30;
+function scrollUp()
+{
+	if(document.body.scrollTop<1)
+	{
+		return;
+	}
+	document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+	setTimeout('scrollUp()',scrollUpDelay);
+}
+
+jQuery(document).ready(function() {
+	jQuery(window).scroll(function() {
+		if(jQuery(document).scrollTop() > 300) {
+			jQuery('.scrollUp').fadeIn();
+		} else {
+			jQuery('.scrollUp').fadeOut();
+		};
+	});
+});
+</script>
 
 {% if page.image and page.headerImage %}
     <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
