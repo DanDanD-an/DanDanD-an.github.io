@@ -15,7 +15,7 @@ layout: page
     position: fixed;
     width: 30px;
     height: 30px;
-    right: 2%;
+    right: 0%;
     bottom: 0px;
     z-index: 999;
     padding: 12px 12px;
@@ -25,7 +25,14 @@ layout: page
     color: #fff;
     background-color: rgb(34, 34, 34);
 }
+
+@media (min-width: 800px) {
+      .scrollUp {
+            right: 10%;
+      }
+}
 </style>
+
 
 <script>
 var scrollUpDelay = 1;
