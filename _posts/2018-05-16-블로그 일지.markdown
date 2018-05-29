@@ -18,10 +18,10 @@ externalLink: false
 
 ### 0413
 * Create Github Blog with Jekyll
-* Apply <a href="http://koppl.in/indigo/">Indigo Minimalist Jekyll Template</a>
+* Apply <a href="http://koppl.in/indigo/" style="text-decoration:underline">Indigo Minimalist Jekyll Template</a>
 * Modify config.yml
 * Change profile image
-* Change main color to <span style="color:#ff1164">#ff1164</span>
+* Change main color to <span style="color:#ff1164">**#ff1164**</span>
 * Do posting test
 * Change font-family & font size
 
@@ -62,12 +62,18 @@ externalLink: false
 ### 0525
 * Add TOP button
 
-### 0526
+### 0528
 * TOP button - fade in/out
+
+### 0529
+* Top button - adjust the position with media query
+* Top button - add icon
+
 
 ---
 ## 앞으로 할 일
 
 * 검색 기능 추가
 * Blog 페이지에서 포스트 제목 앞에 카테고리별로 색깔 태그 표시
-* 이미지 확대 기능 구현
+* 이미지 클릭 시 확대 기능 구현
+* 카테고리 & 태그 별 글목록마다 페이지네이션 구현
