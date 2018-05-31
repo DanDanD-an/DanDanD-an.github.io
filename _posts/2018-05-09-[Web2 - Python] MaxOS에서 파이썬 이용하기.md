@@ -72,7 +72,7 @@ print(b)
 #### 2) httpd.conf 파일에서 <Directory "/Applications/mampstack-7.1.16-0/apache2/htdocs"> 안에 아래 코드를 추가한다.
 * 소스 코드
 {% highlight html %}
-<Files *.py>
+<Files * .py>
       Options ExecCGI
       AddHandler cgi-script .py
 </Files>
