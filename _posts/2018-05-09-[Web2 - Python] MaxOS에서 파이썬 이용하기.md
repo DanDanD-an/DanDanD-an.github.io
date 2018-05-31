@@ -25,7 +25,16 @@ description: Web2 - Python
 
 ### 3-1) 터미널에서 직접 파이썬 이용하기
 * 터미널에 <span class="evidence-purple">**python3**</span> 명령어를 이용하면 python을 실행할 수 있다. 이후 python 사용을 종료하려면 **exit()** 를 입력한다.<br>
-![Markdown Image][1]
+{% highlight bash linenos %}
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 03:03:55)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 3+4+5
+12
+>>> 12/3
+4.0
+>>> exit()
+{% endhighlight %}
 
 ### 3-2) py파일로 파이썬 이용하기: python3 명령어 이용
 * py 파일을 생성한 후, 터미널에서 해당 폴더로 이동하여 <span class="evidence-purple">**python3 pyFileName**</span> 을 입력하면 파일 내 파이썬 코드들을 실행해 결과를 반환/출력해 준다.
@@ -40,13 +49,20 @@ print(b)
 
 ### 3-3) py파일로 파이썬 이용하기: 더욱 간단한 버전
 * 더욱 간단하게 파이썬을 이용하는 명령어는 <span class="evidence-purple">**'./pyFileName.py'**</span>이다. 그러나 이를 그대로 실행하면 다음과 같이 권한 문제가 발생한다.<br>
-![Markdown Image][3]<br><br>
+{% highlight bash linenos %}
+-bash: ./helloworld.py: Permission denied
+{% endhighlight %}
+
  * 이를 해결하기 위해 터미널에서 <span class="evidence-purple">**sudo chmod a+x helloworld.py**</span> 를 입력하여 모든 사용자에게 실행권한을 부여한다.
  * 그리고 다시 위의 명령어를 실행하면 이번에는 아래와 같은 에러가 발생한다.<br>
-  ![Markdown Image][4]<br><br>
+{% highlight bash linenos %}
+./helloworld.py: line 1: a: command not found
+./helloworld.py: line 2: b: command not found
+./helloworld.py: line 3: syntax error near unexpected token 'b'
+./helloworld.py: line 3: 'print(b)'
   * 이러한 문제를 해결하기 위해서는 py 파일 맨 위에 <span class="evidence-purple">**#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3**</span>를 추가해주면 운영체제가 해당 위치의 python3를 이용하여 py파일을 실행한다. 그러나 이러한 방법은 이식성이 낮다는 문제점이 있다.<br>
   * 따라서 이식성을 높이기 위해 위의 코드 대신에 <span class="evidence-purple">**#!/usr/bin/env python3**</span>를 적어주면 env가 python3의 위치를 반환해주어 env와 python3가 설치되어 있는 모든 컴퓨터에서 해당 py파일을 실행할 수 있다.<br>
-  ![Markdown Image][5]<br><br>
+![Markdown Image][2]
 
   ---
 ## 2. Apache와 Python을 CGI로 연동하기
@@ -74,8 +90,4 @@ print("content-type:text/html; charset=utf-8\n")
 
 ---
 [1]: /assets/images/스크린샷2018-05-09-1.jpg
-[2]: /assets/images/스크린샷2018-05-09-2.jpg
-[3]: /assets/images/스크린샷2018-05-09-3.jpg
-[4]: /assets/images/스크린샷2018-05-09-4.jpg
-[5]: /assets/images/스크린샷2018-05-09-5.jpg
-[6]: /assets/images/스크린샷2018-05-09-6.jpg
+[2]: /assets/images/스크린샷2018-05-31-7.jpg
