@@ -29,11 +29,11 @@ description: Web2 - Python
 Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 03:03:55)
 [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> 3+4+5
+3+4+5
 12
->>> 12/3
+12/3
 4.0
->>> exit()
+exit()
 {% endhighlight %}
 
 ### 3-2) py파일로 파이썬 이용하기: python3 명령어 이용
