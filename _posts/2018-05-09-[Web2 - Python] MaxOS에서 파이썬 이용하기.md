@@ -60,6 +60,7 @@ print(b)
 ./helloworld.py: line 2: b: command not found
 ./helloworld.py: line 3: syntax error near unexpected token 'b'
 ./helloworld.py: line 3: 'print(b)'
+{% endhighlight %}
   * 이러한 문제를 해결하기 위해서는 py 파일 맨 위에 <span class="evidence-purple">**#!/Library/Frameworks/Python.framework/Versions/3.6/bin/python3**</span>를 추가해주면 운영체제가 해당 위치의 python3를 이용하여 py파일을 실행한다. 그러나 이러한 방법은 이식성이 낮다는 문제점이 있다.<br>
   * 따라서 이식성을 높이기 위해 위의 코드 대신에 <span class="evidence-purple">**#!/usr/bin/env python3**</span>를 적어주면 env가 python3의 위치를 반환해주어 env와 python3가 설치되어 있는 모든 컴퓨터에서 해당 py파일을 실행할 수 있다.<br>
 ![Markdown Image][2]
