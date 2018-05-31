@@ -2,6 +2,62 @@
 layout: default
 ---
 {% include header.html %}
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<a class="scrollUp" onclick="javascript:scrollUp();" href=#><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+<style>
+.scrollUp {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 0%;
+    bottom: 0px;
+    z-index: 999;
+    padding: 12px 12px;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(34, 34, 34);
+}
+
+@media (min-width: 800px) {
+      .scrollUp {
+            right: 10%;
+      }
+}
+</style>
+
+
+<script>
+var scrollUpDelay = 1;
+var scrollUpSpeed = 30;
+function scrollUp()
+{
+	if(document.body.scrollTop<1)
+	{
+		return;
+	}
+	document.body.scrollTop=document.body.scrollTop-scrollUpSpeed;
+	setTimeout('scrollUp()',scrollUpDelay);
+}
+
+$(document).ready(function() {
+	$(window).scroll(function() {
+		if($(document).scrollTop() > 300) {
+			$('.scrollUp').fadeIn();
+      console.log('a');
+		} else {
+			$('.scrollUp').fadeOut();
+		};
+	});
+});
+</script>
 
 {{content}}
 
