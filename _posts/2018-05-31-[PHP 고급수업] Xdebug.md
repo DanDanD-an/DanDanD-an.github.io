@@ -24,7 +24,10 @@ description: PHP 고급수업
 
 ---
 <div id="one"></div>
-## 1. 설치하기
+## 1. 설치하기(MacOS)
+
+#### 1) pecl 설치
+: 아래 명령어를 터미널에 입력한다.
 
 ---
 <div id="two"></div>
