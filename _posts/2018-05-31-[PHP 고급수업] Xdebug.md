@@ -54,7 +54,7 @@ $ php -v
 <br>
 #### 5) 다음과 같은 문구가 표시되는지 확인한다.
 {% highlight raw %}
-HP 7.0.27 (cli) (built: Feb  1 2018 13:49:26) ( NTS )
+PHP 7.0.27 (cli) (built: Feb  1 2018 13:49:26) ( NTS )
 Copyright (c) 1997-2017 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.0.27, Copyright (c) 1999-2017, by Zend Technologies
@@ -289,7 +289,7 @@ print_ r(c(array('param'=>'test')));
 
 ---
 [1]: /assets/images/스크린샷2018-06-01-1.jpg
-[2]:/ assets/images/스크린샷2018-06-01-2.jpg
+[2]: /assets/images/스크린샷2018-06-01-2.jpg
 [3]: /assets/images/1219.jpg
 [4]: /assets/images/스크린샷2018-06-01-3.jpg
-[5]: /assets/images/1225.jpg
+[5]: /assets/images/1225.gif
