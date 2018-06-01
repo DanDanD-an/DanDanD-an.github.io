@@ -34,7 +34,7 @@ php -r "unlink('composer-setup.php');"
 
 ### 2) Globally - 아래 코드를 복사해 terminal(or iTerm)에 입력한다.
 {% highlight raw %}
-mv composer.phar /usr/local/bin/composer
+$ mv composer.phar /usr/local/bin/composer
 {% endhighlight %}
 
 ### 3) terminal(or iTerm)에 'composer' 명령어를 입력해 아래와 같은 화면이 뜨는지 확인한다.
@@ -48,12 +48,12 @@ mv composer.phar /usr/local/bin/composer
 ### 1) 프로젝트를 위한 디렉토리 생성 > terminal(or iTerm)에서 해당 디렉토리로 이동
 
 ### 2) composer init 명령어 입력해 홈 디렉토리로 설정
-{% highlight bash linenos %}
+{% highlight raw %}
 $ composer init
 {% endhighlight %}
 
 ### 3) package name 등을 설정
-{% highlight bash linenos %}
+{% highlight raw %}
 Package name (<vendor>/<name>) [dan/composer-app]: dan/composer-app
 Description []:
 Author [DanDanD-an <dandandan1002@gmail.com>, n to skip]:
@@ -70,7 +70,7 @@ License []:
 <figcaption class="caption">생활코딩의 PHP기본수업에서는 monolog 패키지를 예시로 사용하였다.</figcaption>
 
 ### 6) composer require 명령어 입력
-{% highlight bash linenos %}
+{% highlight raw %}
 $ composer require monolog/monolog
 {% endhighlight %}
 
@@ -114,7 +114,7 @@ $ composer require monolog/monolog
 ![Markdown Image][8]
 
 ### 6) terminal(or iTerm)에서 tail 명령어 이용해 해당 파일의 내용 확인
-{% highlight bash linenos %}
+{% highlight raw %}
 $ tail -f app.log
 {% endhighlight %}
 ![Markdown Image][9]
@@ -134,7 +134,7 @@ $ tail -f app.log
 {% endhighlight %}
 
 ### 2) autoload 정보 변경 사항을 저장하기 위해 terminal(or iTerm)에 composer install 명령어를 입력한다.
-{% highlight bash linenos %}
+{% highlight raw %}
 $ composer install
 {% endhighlight %}
 
