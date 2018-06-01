@@ -14,10 +14,10 @@ author: Dan
 description: PHP 기본 수업
 ---
 ### 목록
-1. <a href="#one">**Composer 설치하기**</a><br>
-2. <a href="#two">**기본 사용법**</a><br>
-3. <a href="#three">**의존성**</a><br>
-4. <a href="#four">**Auto Load**</a><br>
+1. <a href="#one">Composer 설치하기</a><br>
+2. <a href="#two">기본 사용법</a><br>
+3. <a href="#three">의존성</a><br>
+4. <a href="#four">Auto Load</a><br>
 
 
 ---
