@@ -209,7 +209,7 @@ print_ r(c(array('param'=>'test')));
 
 #### 결과
 ![Markdown Image][3]
-<figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug 오류 추적 중에서</caption>
+<figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug 오류 추적 중에서</figcaption>
 <br>
 * **xdebug.collect_params** : 함수로 전달된 인자를 얼마나 디테일하게 표현할 것인지를 지정. 1부터 4까지 값을 지정할 수 있음. 값이 높을수록 더 자세한 정보를 제공.
 * **xdebug.dump.GET** : GET 방식으로 전달된 값을 출력한다.
@@ -249,7 +249,7 @@ print_ r(c(array('param'=>'test')));
 
 ### 5.1. 매커니즘
 ![Markdown Image][5]
-<figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug Remote Debugging 중에서</caption>
+<figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug Remote Debugging 중에서</figcaption>
 
 <div class="breaker"></div>
 ### 5.2. Remote Debugging 설정
