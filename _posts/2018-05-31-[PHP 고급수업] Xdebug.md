@@ -96,14 +96,6 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 {% endhighlight %}
 
 <div class="breaker"></div>
-###
-:
-<br>
-* 예시
-{% highlight php %}
-{% endhighlight %}
-
-<div class="breaker"></div>
 ### 2.2. Memory
 : 메모리 소모 내역을 출력
 <br>
@@ -296,8 +288,8 @@ print_ r(c(array('param'=>'test')));
 * <a href="https://github.com/benmatselby/xdebug-toggler">Xdebug Toggler for safari</a>
 
 ---
-[1]: assets/images/스크린샷2018-06-01-1.jpg
-[2]: assets/images/스크린샷2018-06-01-2.jpg
-[3]: assets/images/1219.jpg
-[4]: assets/images/스크린샷2018-06-01-3.jpg
-[5]: assets/images/1225.jpg
+[1]: /assets/images/스크린샷2018-06-01-1.jpg
+[2]:/ assets/images/스크린샷2018-06-01-2.jpg
+[3]: /assets/images/1219.jpg
+[4]: /assets/images/스크린샷2018-06-01-3.jpg
+[5]: /assets/images/1225.jpg
