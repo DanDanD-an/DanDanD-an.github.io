@@ -155,7 +155,8 @@ var modal = document.getElementById('myModal');
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.click(function(){
+var close = document.getElementById("close");
+$('#myImg').click(function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -165,8 +166,8 @@ img.click(function(){
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.click(function() {
-    modal.style.display = "none";
+$('.close').click(function() {
+  $('.modal').style.display = "none";
 });
 </script>
 
