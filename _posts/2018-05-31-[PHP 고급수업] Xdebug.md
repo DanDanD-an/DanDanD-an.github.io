@@ -278,11 +278,11 @@ print_ r(c(array('param'=>'test')));
 ### 6.1. 선택적 실행 방법
 : 서버에 접속할 때 GET/POST/COOKIE 중 하나를 이용해 아래의 값을 전달한다.
 
-#### XDEBUG_SESSION
+* XDEBUG_SESSION
  : 리모트 디버깅의 시작을 지시한다.<br>
-#### XDEBUG_PROFILE
+* XDEBUG_PROFILE
  : 프로파일링 데이터를 생성하라고 지시한다.<br>
-#### XDEBUG_TRACE
+* XDEBUG_TRACE
  : Trace를 실행하라고 지시한다.<br>
 
  <div class="breaker"></div>
