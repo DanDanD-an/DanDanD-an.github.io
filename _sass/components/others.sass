@@ -136,14 +136,14 @@
 
 
 /* Add Animation - Zoom in the Modal */
-.modal-content, #modal-caption
-  animation-name: zoom
-  animation-duration: 0.6s
+// .modal-content, #modal-caption
+//   animation-name: zoom
+//   animation-duration: 0.6s
 
 
-@keyframes zoom
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+// @keyframes zoom
+//   from {transform:scale(0)}
+//   to {transform:scale(1)}
 
 
 /* The Close Button */
@@ -165,6 +165,6 @@
 
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px)
+@media #{$mobile}
   .modal-content
       width: 100%
