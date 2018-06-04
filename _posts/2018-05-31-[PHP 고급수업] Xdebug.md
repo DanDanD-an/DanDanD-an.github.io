@@ -282,7 +282,7 @@ print_ r(c(array('param'=>'test')));
  : 리모트 디버깅의 시작을 지시한다.<br>
 * XDEBUG_PROFILE
  : 프로파일링 데이터를 생성하라고 지시한다.<br>
-#### XDEBUG_TRACE
+* XDEBUG_TRACE
  : Trace를 실행하라고 지시한다.<br>
 
  <div class="breaker"></div>
