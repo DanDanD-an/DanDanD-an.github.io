@@ -23,11 +23,9 @@ description: PHP 고급수업
 6. <a href="#six">선택적 실행</a><br>
 
 
----
 <div id="one"></div>
-<div class="underlined">
 ## 1. 설치하기(MacOS)
-</div>
+<div class="underlined"></div>
 : 나는 MacOS에 기본으로 설치되어 있던 php를 이용해왔기 때문에, homebrew대신 pecl을 이용하여 xdebug를 설치하였다.
 
 #### 1) pecl을 이용해 xdebug 다운로드한다.
@@ -53,7 +51,7 @@ https://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
 {% highlight raw %}
 $ php -v
 {% endhighlight %}
-<br>
+
 #### 5) 다음과 같은 문구가 표시되는지 확인한다.
 {% highlight raw %}
 PHP 7.0.27 (cli) (built: Feb  1 2018 13:49:26) ( NTS )
@@ -62,7 +60,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.0.27, Copyright (c) 1999-2017, by Zend Technologies
     with Xdebug v2.6.0, Copyright (c) 2002-2018, by Derick Rethans
 {% endhighlight %}
-<br>
+
 #### 6) 'phpinfo.php' 파일을 생성하고, 웹브라우저에서 열었을 때 Xdebug 항목이 표시되는지 확인한다.
 {% highlight php %}
 <?php
@@ -73,9 +71,9 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ![Markdown Image][2]
 
 
----
 <div id="two"></div>
 ## 2. 기본 기능
+<div class="underlined"></div>
 
 ### 2.1. Context
 : 현재 실행되고 있는 함수나 메소드의 맥락-*어떤 파일에 위치하는지, 몇번째 줄에 위치하는지, 어떻게 호출되었는지 등*-을 출력
@@ -174,9 +172,10 @@ xdebug_dump_superglobals();
 {% endhighlight %}
 
 
----
+
 <div id="three"></div>
 ## 3. 오류 추적
+<div class="underlined"></div>
 : xdebug는 오류가 발생했을 때 어떤 맥락에서 발생한 것인지 추적해서 보여준다.
 <br>
 * 예시
@@ -209,9 +208,10 @@ print_ r(c(array('param'=>'test')));
 * **xdebug.dump.GET** : GET 방식으로 전달된 값을 출력한다.
 * **xdebug.show_local_vars** : 지역변수의 리스트를 출력한다.
 
----
+
 <div id="four"></div>
 ## 4. Profiling
+<div class="underlined"></div>
 : Profiling이란 소프트웨어의 성능을 측정하는 방법론으로 주로 메모리 사용률과 실행 속도를 평가한다.
 
 ### 4.1. 동작 방법
@@ -236,9 +236,9 @@ print_ r(c(array('param'=>'test')));
 <br>
 
 
----
 <div id="five"></div>
 ## 5. Remote Debugging
+<div class="underlined"></div>
 : 리모트 디버깅이란 원격지의 서버를 로컬의 디버거를 이용해서 디버깅하는 것으로 한줄씩 실행하면서 로직의 흐름을 추적해 문제를 파악할 수 있도록 한다. 코드리뷰에도 도움이 된다.
 
 ### 5.1. 매커니즘
@@ -267,9 +267,10 @@ print_ r(c(array('param'=>'test')));
 * 단, 이 옵션은 모든 클라이언트에 접속하기 때문에 불특정 다수가 접속하는 서버환경에서는 보안 홀이 생길 수도 있으므로 사용하지 않는 것이 좋다!
 
 
----
+
 <div id="six"></div>
 ## 6. 선택적 실행
+<div class="underlined"></div>
 : Xdebug의 일부 기능들은 시스템에 많은 부하를 주거나, 보안상 심각한 위험을 초래할 수 있기 때문에 원하는 경우에만 이러한 기능이 동작하게 할 필요가 있다.
 
 ### 6.1. 선택적 실행 방법
