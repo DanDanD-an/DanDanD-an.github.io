@@ -76,11 +76,6 @@
     border-top-width: thin
 
 
-  .underlined
-    border-bottom-style: dotted
-    border-bottom-color: rgb(8, 221, 121)
-
-
   /* Style the Image Used to Trigger the Modal */
 #myImg
   border-radius: 5px
@@ -92,47 +87,46 @@
 
 /* The Modal (background) */
 .modal
- /* Hidden by default */
-  display: none
-  /* Stay in place */
-  position: fixed
-  /* Sit on top */
-  z-index: 1
-  /* Location of the box */
-  padding-top: 100px
-  left: 0
-  top: 0
-  /* Full width */
-  width: 100%
-  /* Full height */
-  height: 100%
-  /* Enable scroll if needed */
-  overflow: auto
-  /* Fallback color */
-  background-color: rgb(0,0,0)
-  /* Black w/ opacity */
-  background-color: rgba(0,0,0,0.9)
-  cursor: pointer
-}
+   /* Hidden by default */
+    display: none
+    /* Stay in place */
+    position: fixed
+    /* Sit on top */
+    z-index: 1
+    /* Location of the box */
+    padding-top: 100px
+    left: 0
+    top: 0
+    /* Full width */
+    width: 100%
+    /* Full height */
+    height: 100%
+    /* Enable scroll if needed */
+    overflow: auto
+    /* Fallback color */
+    background-color: rgb(0,0,0)
+    /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.9)
+    cursor: pointer
+
 
 /* Modal Content (Image) */
 .modal-content
-  margin: auto
-  display: block
-  width: 100%
-  max-width: 700px
+    margin: auto
+    display: block
+    width: 100%
+    max-width: 700px
 
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #modal-caption
-  margin: auto
-  display: block
-  width: 80%
-  max-width: 700px
-  text-align: center
-  color: #ccc
-  padding: 10px 0
-  height: 150px
+    margin: auto
+    display: block
+    width: 80%  max-width: 700px
+    text-align: center
+    color: #ccc
+    padding: 10px 0
+    height: 150px
 
 
 /* Add Animation - Zoom in the Modal */
@@ -148,23 +142,23 @@
 
 /* The Close Button */
 .close
-  position: absolute
-  top: 15px
-  right: 35px
-  color: #f1f1f1
-  font-size: 30px
-  font-weight: bold
-  transition: 0.3s
+    position: absolute
+    top: 15px
+    right: 35px
+    color: #f1f1f1
+    font-size: 30px
+    font-weight: bold
+    transition: 0.3s
 
 
 .close:hover,
 .close:focus
-  color: #bbb
-  text-decoration: none
-  cursor: pointer
+    color: #bbb
+    text-decoration: none
+    cursor: pointer
 
 
 /* 100% Image Width on Smaller Screens */
 @media #{$mobile}
-  .modal-content
-      width: 100%
+.modal-content
+    width: 100%
