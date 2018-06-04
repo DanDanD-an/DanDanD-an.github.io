@@ -22,7 +22,7 @@ description: PHP 고급수업
 5. <a href="#five">Remote Debugging</a><br>
 6. <a href="#six">선택적 실행</a><br>
 
-
+---
 <div id="one"></div>
 ## 1. 설치하기(MacOS)
 <div class="underlined"></div>
@@ -70,7 +70,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 <br>
 ![Markdown Image][2]
 
-
+ <div class="breaker"></div>
 <div id="two"></div>
 ## 2. 기본 기능
 <div class="underlined"></div>
@@ -172,7 +172,7 @@ xdebug_dump_superglobals();
 {% endhighlight %}
 
 
-
+ <div class="breaker"></div>
 <div id="three"></div>
 ## 3. 오류 추적
 <div class="underlined"></div>
@@ -208,7 +208,7 @@ print_ r(c(array('param'=>'test')));
 * **xdebug.dump.GET** : GET 방식으로 전달된 값을 출력한다.
 * **xdebug.show_local_vars** : 지역변수의 리스트를 출력한다.
 
-
+ <div class="breaker"></div>
 <div id="four"></div>
 ## 4. Profiling
 <div class="underlined"></div>
@@ -234,7 +234,7 @@ print_ r(c(array('param'=>'test')));
 #### 4.2.3. 비동기 작업
 : 사용자가 어떤 데이터를 입력했을 때 그 순간 작업을 처리하지 않고, 처리해야할 작업의 내용만을 저장했다가 실제 작업은 시스템이 한가한 시간이나 다른 컴퓨터에서 처리하는 기법 ex) cron
 <br>
-
+ <div class="breaker"></div>
 
 <div id="five"></div>
 ## 5. Remote Debugging
@@ -266,7 +266,7 @@ print_ r(c(array('param'=>'test')));
 : 여러 이용자가 한 대의 서버에서 리모트 디버깅을 하거나, 클라이언트의 IP가 계속 변경되는 상황이라면, **xdebug.remote_connect_back** 를 사용하여 자동으로 접속자의 IP로 디버깅이 수립되도록 한다.<br>
 * 단, 이 옵션은 모든 클라이언트에 접속하기 때문에 불특정 다수가 접속하는 서버환경에서는 보안 홀이 생길 수도 있으므로 사용하지 않는 것이 좋다!
 
-
+ <div class="breaker"></div>
 
 <div id="six"></div>
 ## 6. 선택적 실행
