@@ -25,8 +25,9 @@ description: PHP 고급수업
 
 ---
 <div id="one"></div>
+<div class="underlined">
 ## 1. 설치하기(MacOS)
-<div class="underlined"></div>
+</div>
 : 나는 MacOS에 기본으로 설치되어 있던 php를 이용해왔기 때문에, homebrew대신 pecl을 이용하여 xdebug를 설치하였다.
 
 #### 1) pecl을 이용해 xdebug 다운로드한다.
