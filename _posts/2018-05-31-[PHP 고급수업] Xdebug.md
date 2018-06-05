@@ -68,7 +68,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-![2]{: id="myImg"}
+![Markdown Image][2]{: id="myImg" alt="Hi"}
 
  <div class="breaker"></div>
 <div id="two"></div>
