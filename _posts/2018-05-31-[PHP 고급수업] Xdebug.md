@@ -70,7 +70,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 <br>
 ![Markdown Image][2]
 
-<img src="https://dandand-an.github.io/assets/images/1219.jpg" style="cursor:pointer" onclick="window.open('https://dandand-an.github.io/assets/images/1219.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');">
+<img src="https://dandand-an.github.io/assets/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72018-06-01-2.jpg" style="cursor:pointer" onclick="window.open('https://dandand-an.github.io/assets/images/1219.jpg','asdfo8or','scrollbars=yes,width=417,height=385,top=10,left=20');">
 
 <img id="myImg" onclick="viewModal();" src="https://dandand-an.github.io/assets/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72018-06-01-2.jpg">
 
