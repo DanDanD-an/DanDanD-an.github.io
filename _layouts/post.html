@@ -123,13 +123,6 @@ cursor: pointer;
 var scrollUpDelay = 1;
 var scrollUpSpeed = 30;
 
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
 
 function scrollUp()
 {
@@ -153,7 +146,7 @@ $(document).ready(function() {
 
   console.log('b');
   $('#myImg').click(function() {
-      console.log('c');
+      console.log('d');
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
