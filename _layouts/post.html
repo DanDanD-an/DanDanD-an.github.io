@@ -148,27 +148,60 @@ $(document).ready(function() {
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('myModal');
+var modal = $("#myModal"); //팝업 div
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-$(function(){$("#myImg").click(function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-    });
-});
+var imgsUrl; //이미지 url
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var altText;  //이미지안 alt값 출력
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+
+
+$(".img-list li>a").on("click", function () {  //클릭 이벤트
+
+var _index = $(this).parent().index(); //해당 index 찾기
+
+var _indexTar = $(".img-list li").eq(_index); //해당 인덱스
+
+
+
+$(".img-list li").removeClass("open"); //"open" 클래스 삭제
+
+_indexTar.addClass("open"); //"open" 클래스 추가
+
+
+
+imgsUrl = _indexTar.find(".myImg").attr("src"); //이미지 경로에 src경로 찾기
+
+altText = _indexTar.find(".myImg").attr("alt"); //이미지 경로에 alr값 찾기
+
+
+
+modal.find(".modal-content").attr("src", imgsUrl); //해당 팝업 안에 이미지 넣기
+
+modal.find(".modal-content").attr("id", ""); //팝업안 이미지 순서
+
+modal.find(".modal-content").attr("id", "imgs_" + _index); //팝업안 이미지 순서
+
+modal.find(".caption").text(altText); // 팝업 텍스트 출력
+
+
+
+modal.show(); //팝업 열기
+
+})
+
+
+
+$("span").on("click", function () {
+
+modal.hide();   //팝업 닫기
+
+})
+
+
+
+
+출처: http://kararico.tistory.com/10 [정원]
 </script>
 
 {% if page.image and page.headerImage %}
