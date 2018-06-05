@@ -68,7 +68,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-![Image][2]{: id="myImg"}
+![2]{: id="myImg"}
 
  <div class="breaker"></div>
 <div id="two"></div>
