@@ -9,17 +9,6 @@ layout: page
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-<!-- Bootstrap -->
-  <!-- 합쳐지고 최소화된 최신 CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  <!-- 부가적인 테마 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-
 <!-- go to Top -->
 <a class="scrollUp" onclick="javascript:scrollUp();" href=#><i class="fas fa-angle-up" aria-hidden="true"></i></a>
 <style>
@@ -169,16 +158,15 @@ var modal = document.getElementById('myModal');
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-
-function viewModal() {
-  $('#myImg').click(function() {
-  $('#myModal').toggle();
-  console.log('b');
-    // modal.style.display = "block";
-    // modalImg.src = this.src;
-    // captionText.innerHTML = this.alt;
-    });
-}
+$(document).ready(function() {
+    $('#myImg').click(function() {
+    $('#myModal').toggle();
+    console.log('b');
+      // modal.style.display = "block";
+      // modalImg.src = this.src;
+      // captionText.innerHTML = this.alt;
+      });
+});
 
 
 // Get the <span> element that closes the modal
