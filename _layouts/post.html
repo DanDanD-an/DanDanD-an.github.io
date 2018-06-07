@@ -155,22 +155,22 @@ $(document).ready(function() {
 		};
 	});
 
-  modalImg.src = '';
-  captionText.innerHTML = '';
-  console.log(modalImg.src);
-
   console.log('h');
   $('#myImg').click(function() {
       console.log('f');
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      console.log(modalImg.src);
     });
 
     $('.close').click(function() {
         modal.style.display = "none";
     });
 
+    modalImg.src = '';
+    captionText.innerHTML = '';
+    console.log(modalImg.src);
 
 });
 </script>

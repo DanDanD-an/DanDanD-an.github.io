@@ -43,7 +43,7 @@ https://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
 <div id="php"></div>
 #### 2) 'php.ini' 파일 설정
 : 'php.ini' 파일을 찾아 아래와 같이 수정하여 xdebug를 활성화시킨다.
-![Markdown Image][1]{: id="myImg" alt=""}
+<img id="myImg" src="/assets/images/스크린샷2018-06-01-1.jpg" alt="">
 <br>
 #### 3) apache 서버를 restart하여 변경사항을 저장한다.
 <br>
