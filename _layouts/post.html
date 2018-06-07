@@ -172,11 +172,12 @@ $(document).ready(function() {
 
     $('.close').click(function() {
         modal.style.display = "none";
+        modalImg.src = '';
+        captionText.innerHTML = '';
+        console.log(modalImg.src + 'a');
     });
 
-    modalImg.src = '';
-    captionText.innerHTML = '';
-    console.log(modalImg.src);
+
 
 });
 </script>
