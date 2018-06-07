@@ -68,7 +68,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-![Markdown Image][2]{: id="myImg" alt=""}
+<img id="myImg" src="/assets/images/스크린샷2018-06-01-2.jpg" alt="">
 
  <div class="breaker"></div>
 <div id="two"></div>

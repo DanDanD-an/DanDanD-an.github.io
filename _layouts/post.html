@@ -159,12 +159,12 @@ $(document).ready(function() {
   captionText.innerHTML = '';
   console.log(modalImg.src);
 
-  console.log('b');
+  console.log('h');
   $('#myImg').click(function() {
+      console.log('f');
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
-      console.log('f');
     });
 
     $('.close').click(function() {
