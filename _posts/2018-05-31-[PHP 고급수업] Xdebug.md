@@ -70,9 +70,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-<a class="image-popup-fit-width" href="http://farm9.staticflickr.com/8379/8588290361_ecf8c27021_b.jpg" title="This image fits only horizontally.">
-	<img src="http://farm9.staticflickr.com/8379/8588290361_ecf8c27021_s.jpg" width="75" height="75">
-</a>
+![Hi][2]
 
  <div class="breaker"></div>
 <div id="two"></div>

@@ -11,13 +11,13 @@ layout: page
 
 <!-- Magnific Popup plugin -->
   <!-- Magnific Popup core CSS file -->
-  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="/_includes/dimsemenov-Magnific-Popup-2ff1692/dist/magnific-popup.css">
 
   <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   <!-- Magnific Popup core JS file -->
-  <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  <script src="/_includes/dimsemenov-Magnific-Popup-2ff1692/dist/jquery.magnific-popup.js"></script>
 
 <!-- go to Top -->
 <a class="scrollUp" onclick="javascript:scrollUp();" href=#><i class="fas fa-angle-up" aria-hidden="true"></i></a>
@@ -62,6 +62,7 @@ layout: page
 .mfp-no-margins .mfp-container {
 	padding: 0;
 }
+
 
 /* for zoom animation */
 /*.mfp-with-zoom .mfp-container,
@@ -108,11 +109,11 @@ $(document).ready(function() {
 			$('.scrollUp').fadeIn();
 		} else {
 			$('.scrollUp').fadeOut();
-      console.log('e');
 		};
 	});
 
   $('.image-popup-vertical-fit').magnificPopup({
+    console.log('b');
 		type: 'image',
 		closeOnContentClick: true,
 		mainClass: 'mfp-img-mobile',
@@ -144,6 +145,19 @@ $(document).ready(function() {
 			duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
+
+  $('.post > p > img[alt]').replaceWith(function () {
+    return '<figure>'
+        + '<a href="' + $(this).attr('src') + '" class="mg-link">'
+        + '<img src="' + $(this).attr('src') + '"/></a>'
+        + '<figcaption class="caption">' + $(this).attr('alt') + '</figcaption>'
+        + '</figure>';
+  });
+
+  $('.mg-link').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true
+  });
 
 });
 </script>
