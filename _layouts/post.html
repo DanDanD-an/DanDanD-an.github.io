@@ -151,7 +151,7 @@ $(document).ready(function() {
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
   var span = document.getElementsByClassName("close")[0];
-  
+
 	$(window).scroll(function() {
 		if($(document).scrollTop() > 300) {
 			$('.scrollUp').fadeIn();
@@ -163,7 +163,7 @@ $(document).ready(function() {
 
   console.log('h');
   $('#myImg').click(function() {
-      console.log('b');
+      console.log('d');
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
