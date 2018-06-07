@@ -43,7 +43,9 @@ https://jason.pureconcepts.net/2012/10/install-pear-pecl-mac-os-x/
 <div id="php"></div>
 #### 2) 'php.ini' 파일 설정
 : 'php.ini' 파일을 찾아 아래와 같이 수정하여 xdebug를 활성화시킨다.
-<img id="myImg" src="/assets/images/스크린샷2018-06-01-1.jpg" alt="">
+<a class="image-popup-vertical-fit" href="http://farm9.staticflickr.com/8241/8589392310_7b6127e243_b.jpg" title="Caption. Can be aligned to any side and contain any HTML.">
+	<img src="http://farm9.staticflickr.com/8241/8589392310_7b6127e243_s.jpg" width="75" height="75">
+</a>
 <br>
 #### 3) apache 서버를 restart하여 변경사항을 저장한다.
 <br>
@@ -68,7 +70,9 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-<img id="myImg" src="/assets/images/스크린샷2018-06-01-2.jpg" alt="">
+<a class="image-popup-fit-width" href="http://farm9.staticflickr.com/8379/8588290361_ecf8c27021_b.jpg" title="This image fits only horizontally.">
+	<img src="http://farm9.staticflickr.com/8379/8588290361_ecf8c27021_s.jpg" width="75" height="75">
+</a>
 
  <div class="breaker"></div>
 <div id="two"></div>
