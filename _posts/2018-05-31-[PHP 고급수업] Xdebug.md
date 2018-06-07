@@ -68,7 +68,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-![Hi][2]
+![Hi][1]
 
  <div class="breaker"></div>
 <div id="two"></div>
