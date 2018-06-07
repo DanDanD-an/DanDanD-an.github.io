@@ -160,15 +160,16 @@ $(document).ready(function() {
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
       console.log('d');
+      modalImg.src = '';
+      captionText.innerHTML = '';
+      console.log(modalImg.src);
     });
 
     $('.close').click(function() {
         modal.style.display = "none";
     });
 
-    modalImg.src = '';
-    captionText.innerHTML = '';
-    console.log(modalImg.src);
+
 });
 </script>
 
