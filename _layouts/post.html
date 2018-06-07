@@ -154,10 +154,12 @@ $(document).ready(function() {
 		};
 	});
 
+  console.log('b');
   $('#myImg').click(function() {
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      console.log('c');
     });
 
     $('.close').click(function() {
