@@ -151,18 +151,20 @@ $(document).ready(function() {
 			$('.scrollUp').fadeIn();
 		} else {
 			$('.scrollUp').fadeOut();
+      console.log('e');
 		};
 	});
+
+  modalImg.src = '';
+  captionText.innerHTML = '';
+  console.log(modalImg.src);
 
   console.log('b');
   $('#myImg').click(function() {
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
-      console.log('d');
-      modalImg.src = '';
-      captionText.innerHTML = '';
-      console.log(modalImg.src);
+      console.log('f');
     });
 
     $('.close').click(function() {
