@@ -2,11 +2,6 @@
 layout: page
 ---
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 <!-- go to Top -->
@@ -35,49 +30,11 @@ layout: page
             right: 10%;
       }
 }
-
-
-/* * * * * * * * * *  Magnific Popup  * * * * * * * * * */
-
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-	padding: 0;
-}
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
-}
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-	padding: 0;
-}
-
-
-/* for zoom animation */
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-		opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-		opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-	opacity: 0;
-}
-
 </style>
+
+<div id="demo">
+  <a href="https://dandand-an.github.io/assets/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72018-06-01-1.jpg" title="Caption for the image"><img src="https://dandand-an.github.io/assets/images/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B72018-06-01-1.jpg"></a>
+</div>
 
 <script>
 var scrollUpDelay = 1;
@@ -104,6 +61,7 @@ $(document).ready(function() {
 	});
 
   console.log('c');
+  $('#demo a').rebox();
 });
 </script>
 
