@@ -1,17 +1,16 @@
 ---
 layout: page
 ---
+<!-- Magnific Popup plugin -->
+<script src="/_includes/magnific-popup/jquery-1.12.0.min.js"></script>
+<script src="/_includes/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
+  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-<!-- Magnific Popup plugin -->
-<script src="/_includes/magnific-popup/jquery-1.12.0.min.js"></script>
-<script src="/_includes/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <!-- go to Top -->
 <a class="scrollUp" onclick="javascript:scrollUp();" href=#><i class="fas fa-angle-up" aria-hidden="true"></i></a>
@@ -117,7 +116,7 @@ $(document).ready(function() {
         + '</figure>';
   });
 
-  $('.mg-link').MagnificPopup({
+  $('.mg-link').magnificPopup({
     type: 'image',
     closeOnContentClick: true
   });
