@@ -180,6 +180,4 @@
 				$t.data('rebox', $.rebox.lookup.i);
 			});
 	};
-
-
 })(jQuery);
