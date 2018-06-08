@@ -1,7 +1,7 @@
 $(document).ready(function() {
   console.log('c');
   $('.post > p > img[alt]').replaceWith(function () {
-    console.log('b');
+    console.log('x');
     return '<figure>'
         + '<a href="' + $(this).attr('src') + '" class="mg-link">'
         + '<img src="' + $(this).attr('src') + '"/></a>'
