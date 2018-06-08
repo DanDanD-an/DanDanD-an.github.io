@@ -29,7 +29,7 @@
 		captionAttr: 'title',  // name of the attribute to grab the caption from
 		template: 'image',     // the default template to be used (see templates below)
 		templates: {           // define templates to create the elements you need function($item, settings)
-			image: function($item, settings, callback){
+		  image: function($item, settings, callback){
 				return $('<img src="'+ $item.attr('href') +'" class="'+ settings.theme +'-content" />').on('load', callback);
 			}
 		}
