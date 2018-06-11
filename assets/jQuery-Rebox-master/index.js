@@ -1,1 +1,1 @@
-$('#demo a').rebox();
+$('#demo img').rebox();
