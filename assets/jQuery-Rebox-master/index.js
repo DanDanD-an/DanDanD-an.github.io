@@ -1,2 +1,2 @@
 $('#demo a').rebox();
-cosole.log('vv');
+console.log('vv');
