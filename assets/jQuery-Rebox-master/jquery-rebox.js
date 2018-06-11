@@ -14,6 +14,7 @@
 		this.$items = null;    // recomputed each time its opened
 		this.idx = 0;          // of the $items which index are we on
 		this.enable();
+		console.log('vv');
 	};
 
 	$.rebox.defaults = {
