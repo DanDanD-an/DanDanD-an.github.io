@@ -61,7 +61,7 @@
 				}
 
 				// build the rebox
-				t.$box = $('<div class="'+ t.settings.theme +'" style="display:none;">'+
+				t.$box = $('<div class="'+ t.settings.theme +'" style="display:block;">'+
 							'<a href="#" class="'+ t.settings.theme +'-close '+ t.settings.theme +'-button">'+ t.settings.close +'</a>' +
 							'<a href="#" class="'+ t.settings.theme +'-prev '+ t.settings.theme +'-button">'+ t.settings.prev +'</a>' +
 							'<a href="#" class="'+ t.settings.theme +'-next '+ t.settings.theme +'-button">'+ t.settings.next +'</a>' +

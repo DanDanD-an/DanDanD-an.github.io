@@ -67,7 +67,6 @@ $(document).ready(function() {
 	});
 
   console.log('c');
-  $('#demo').rebox({selector: 'a'});
   $('#demo').rebox({ selector: 'a' })
       .on('rebox:open', function(e, rx){ console.log(e.type, rx); })
       .on('rebox:close', function(e, rx){ console.log(e.type, rx); })
