@@ -1,11 +1,3 @@
-/*
- * jQuery Rebox [http://trentrichardson.com/examples/jQuery-Rebox]
- * By: Trent Richardson [http://trentrichardson.com]
- *
- * Copyright 2014 Trent Richardson
- * Dual licensed under the MIT license.
- * http://trentrichardson.com/Impromptu/MIT-LICENSE.txt
- */
 (function($){
 	$.rebox = function($this, options){
 		this.settings = $.extend(true, {}, $.rebox.defaults, options);
@@ -14,7 +6,6 @@
 		this.$items = null;    // recomputed each time its opened
 		this.idx = 0;          // of the $items which index are we on
 		this.enable();
-		console.log('vv');
 	};
 
 	$.rebox.defaults = {
@@ -30,8 +21,8 @@
 		captionAttr: 'title',  // name of the attribute to grab the caption from
 		template: 'image',     // the default template to be used (see templates below)
 		templates: {           // define templates to create the elements you need function($item, settings)
-		  image: function($item, settings, callback){
-				return $('<img src="'+ $item.attr('href') +'" class="'+ settings.theme +'-content" />').on('load', callback);
+			image: function($item, settings, callback){
+				return $('<img src="'+ $item.attr('href') +'" class="'+ settings.theme +'-content" />').load(callback);
 			}
 		}
 	};
@@ -61,7 +52,7 @@
 				}
 
 				// build the rebox
-				t.$box = $('<div class="'+ t.settings.theme +'" style="display:block;">'+
+				t.$box = $('<div class="'+ t.settings.theme +'" style="display:none;">'+
 							'<a href="#" class="'+ t.settings.theme +'-close '+ t.settings.theme +'-button">'+ t.settings.close +'</a>' +
 							'<a href="#" class="'+ t.settings.theme +'-prev '+ t.settings.theme +'-button">'+ t.settings.prev +'</a>' +
 							'<a href="#" class="'+ t.settings.theme +'-next '+ t.settings.theme +'-button">'+ t.settings.next +'</a>' +
@@ -70,16 +61,7 @@
 						'</div>').appendTo('body').css('zIndex',t.settings.zIndex).fadeIn(t.settings.speed)
 						.on('click.rebox','.'+t.settings.theme +'-close', function(e){ e.preventDefault(); t.close(); })
 						.on('click.rebox','.'+t.settings.theme +'-next', function(e){ e.preventDefault(); t.next(); })
-						.on('click.rebox','.'+t.settings.theme +'-prev', function(e){ e.preventDefault(); t.prev(); })
-						.on('click.rebox','.'+t.settings.theme +'-contents', function(e){
-							e.preventDefault();
-							// if the content is clicked, go to the next, otherwise close
-							if($(e.target).hasClass(t.settings.theme +'-content') && t.$items.length > 1){
-								t.next();
-							}else{
-								t.close();
-							}
-						});
+						.on('click.rebox','.'+t.settings.theme +'-prev', function(e){ e.preventDefault(); t.prev(); });
 
 				// add some key hooks
 				$(document).on('swipeLeft.rebox', function(e){ t.next(); })
@@ -104,7 +86,7 @@
 				if(t.$box && t.$box.length){
 					t.$box.fadeOut(t.settings.speed, function(e){
 						t.$box.remove();
-						t.$box = null;
+						t.box = null;
 						t.$el.trigger('rebox:close',[t]);
 					});
 				}
@@ -181,4 +163,6 @@
 				$t.data('rebox', $.rebox.lookup.i);
 			});
 	};
-})(jQuery);
+
+
+})(window.jQuery || window.Zepto || window.$);
