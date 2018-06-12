@@ -31,7 +31,19 @@ description: Web2 - JavaScript
 ### 1) < script> 태그
 * html 코드에 JavaScript 코드를 추가하기 위해서는 <span class="evidence-purple">**< script> 태그**</span>를 이용한다.
 
-### 2) Event
+### 2) Inline
+: **inline** 은 태그에 직접 자바스크립트를 기술하는 방식이다. 장점은 태그에 연관된 스크립트가 명시적으로 드러난다는 점이지만, 정보와 제어가 섞여 있는 형태이기 때문에 정보로서의 가치가 떨어진다는 단점이 있다.
+* 예시코드
+{% highlight html %}
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="button" onclick="alert('Hello world')" value="Hello world" />
+</body>
+</html>
+{% endhighlight %}
+
+### 3) Event
 * 버튼을 클릭했을 때 경고창이 표시되는 등, 웹브라우저 위에서 일어날 수 있는 한정적 사건을 <span class="evidence-purple">**이벤트(Event)**</span>라고 한다.
 
 ---

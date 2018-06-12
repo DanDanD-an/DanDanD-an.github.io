@@ -14,7 +14,13 @@ author: Dan
 externalLink: false
 ---
 
-## Apr 18
+## Go to
+<h3><a href="#Apr">April</a> - <a href="#May">May</a> - <a href="#June">June</a></h3>
+
+---
+<div id="Apr"></div>
+## Apr 2018
+<div class="underlined"></div>
 
 ### 0413
 * Create Github Blog with Jekyll
@@ -41,7 +47,9 @@ externalLink: false
 * Remove show-author
 
 ---
-## May 18
+<div id="May"></div>
+## May 2018
+<div class="underlined"></div>
 
 ### 0503
 * Change line-height
@@ -69,11 +77,24 @@ externalLink: false
 * Top button - adjust the position with media query
 * Top button - add icon
 
+---
+<div id="June"></div>
+## June 2018
+<div class="underlined"></div>
+
+### 0604
+* Create dotted underline
+{%highlight html %}
+<div class="underlined"></div>
+{% endhighlight %}
+
+### 0612
+* Add <a href="https://github.com/trentrichardson/jQuery-Rebox">Rebox</a> jQuery plugin
+
 
 ---
 ## 앞으로 할 일
 
 * 검색 기능 추가
 * Blog 페이지에서 포스트 제목 앞에 카테고리별로 색깔 태그 표시
-* 이미지 클릭 시 확대 기능 구현
 * 카테고리 & 태그 별 글목록마다 페이지네이션 구현
