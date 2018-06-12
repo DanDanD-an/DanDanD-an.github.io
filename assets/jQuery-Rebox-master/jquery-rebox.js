@@ -22,7 +22,7 @@
 		template: 'image',     // the default template to be used (see templates below)
 		templates: {           // define templates to create the elements you need function($item, settings)
 			image: function($item, settings, callback){
-				return $('<img src="'+ $item.attr('href') +'" class="'+ settings.theme +'-content" />').load(callback);
+				return $('<img src="'+ $item.attr('href') +'" class="'+ settings.theme +'-content" />').on('load', callback);
 			}
 		}
 	};
