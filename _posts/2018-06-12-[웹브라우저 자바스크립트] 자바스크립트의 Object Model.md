@@ -101,7 +101,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-1.jpg"><img src="/assets/images/스크린샷2018-06-12-2.jpg"></a></div>
+<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-2.jpg"><img src="/assets/images/스크린샷2018-06-12-2.jpg"></a></div>
 
 #### 1.2.3. prompt
 : 사용자로부터 값을 입력받을 수 있음
@@ -125,7 +125,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-1.jpg"><img src="/assets/images/스크린샷2018-06-12-3.jpg"></a></div>
+<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-3.jpg"><img src="/assets/images/스크린샷2018-06-12-3.jpg"></a></div>
 
 <div class="breaker"></div>
 ### 1.3. Location 객체
@@ -212,6 +212,8 @@ function open5(){
 </body>
 </html>
 {% endhighlight %}
+
+_ㅌㅌㅌ_
 
 #### 1.4.2. 상호작용
 {% highlight javascript %}
