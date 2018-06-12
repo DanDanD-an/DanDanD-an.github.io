@@ -10,7 +10,7 @@ crossorigin="anonymous"></script>
 <script src="/assets/jQuery-Rebox-master/lib/jquery-litelighter.js"></script>
 <script src="/assets/jQuery-Rebox-master/jquery-rebox.js"></script>
 <script type="text/javascript" src="/assets/jQuery-Rebox-master/index.js"></script>
-<link rel="stylesheet" href="/assets/jQuery-Rebox-master/jquery-rebox.sass">
+<link rel="text/x-sass" href="/assets/jQuery-Rebox-master/jquery-rebox.sass">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
@@ -67,6 +67,7 @@ $(document).ready(function() {
 	});
 
   console.log('c');
+  $('#demo').rebox({selector: 'a'});
   $('#demo').rebox({ selector: 'a' })
       .on('rebox:open', function(e, rx){ console.log(e.type, rx); })
       .on('rebox:close', function(e, rx){ console.log(e.type, rx); })
