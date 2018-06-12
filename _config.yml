@@ -106,7 +106,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
-  - jQuery-Rebox
+  - jquery-rebox
 
 jekyll-mentions:
     base_url: https://github.com
