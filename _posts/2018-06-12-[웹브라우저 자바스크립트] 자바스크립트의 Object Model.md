@@ -76,7 +76,8 @@ description: 웹브라우저 자바스크립트
 </html>
 {% endhighlight %}
 
-* 결과
+#### 결과
+<br>
 ![Markdown Image][2]{: id="rebox" alt=""}
 
 #### 1.2.2. confirm
@@ -100,7 +101,8 @@ description: 웹브라우저 자바스크립트
 </html>
 {% endhighlight %}
 
-* 결과
+#### 결과
+<br>
 ![Markdown Image][3]{: id="rebox" alt=""}
 
 #### 1.2.3. prompt
@@ -124,7 +126,7 @@ description: 웹브라우저 자바스크립트
 </html>
 {% endhighlight %}
 
-* 결과
+#### 결과
 <br>
 ![Markdown Image][1]{: id="rebox" alt=""}
 
@@ -213,8 +215,6 @@ function open5(){
 </body>
 </html>
 {% endhighlight %}
-
-_ㅌㅌㅌ_
 
 #### 1.4.2. 상호작용
 {% highlight javascript %}
