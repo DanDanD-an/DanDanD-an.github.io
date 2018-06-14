@@ -125,7 +125,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-![Markdown Image][1]
+![Markdown Image][1]{: id="rebox"}
 
 <div class="breaker"></div>
 ### 1.3. Location 객체

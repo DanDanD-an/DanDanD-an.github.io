@@ -68,7 +68,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 ?>
 {% endhighlight %}
 <br>
-![Hi][2]
+![Markdown Img][2]{: alt=""}
 
  <div class="breaker"></div>
 <div id="two"></div>
@@ -201,7 +201,7 @@ print_ r(c(array('param'=>'test')));
 {% endhighlight %}
 
 #### 결과
-![Markdown Image][3]{: id="myImg" alt="생활코딩 PHP 고급수업 - Xdebug 오류 추적 중에서"}
+![Markdown Image][3]{: id="rebox" alt="생활코딩 PHP 고급수업 - Xdebug 오류 추적 중에서"}
 <figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug 오류 추적 중에서</figcaption>
 <br>
 * **xdebug.collect_params** : 함수로 전달된 인자를 얼마나 디테일하게 표현할 것인지를 지정. 1부터 4까지 값을 지정할 수 있음. 값이 높을수록 더 자세한 정보를 제공.
@@ -216,7 +216,7 @@ print_ r(c(array('param'=>'test')));
 
 ### 4.1. 동작 방법
 : 'phpinfo.php' 파일을 웹브라우저에서 열었을 때, xdebug 항목의 **xdebug.profiler_enable** 이 **On** 으로 설정되어 있다면, 프로파일러를 사용할 수 있다.<br>
-![Markdown Image][4]{: id="myImg" alt=""}
+![Markdown Image][4]{: id="rebox" alt=""}
 <br>
 * 해당 항목이 On으로 설정되어 있지 않은 경우, <a href="#php" style="text-decoration:underline;">1. 설치하기 - 2) 'php.ini' 파일 설정</a> 을 참고한다.
 
@@ -242,7 +242,7 @@ print_ r(c(array('param'=>'test')));
 : 리모트 디버깅이란 원격지의 서버를 로컬의 디버거를 이용해서 디버깅하는 것으로 한줄씩 실행하면서 로직의 흐름을 추적해 문제를 파악할 수 있도록 한다. 코드리뷰에도 도움이 된다.
 
 ### 5.1. 매커니즘
-![Markdown Image][5]{: id="myImg" alt="생활코딩 PHP 고급수업 - Xdebug Remote Debugging 중에서"}
+![Markdown Image][5]{: id="rebox" alt="생활코딩 PHP 고급수업 - Xdebug Remote Debugging 중에서"}
 <figcaption class="caption">생활코딩 PHP 고급수업 - Xdebug Remote Debugging 중에서</figcaption>
 
 <div class="breaker"></div>
