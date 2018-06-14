@@ -77,7 +77,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-1.jpg"><img src="/assets/images/스크린샷2018-06-12-1.jpg"></a></div>
+![Markdown Image][2]{: id="rebox" alt=""}
 
 #### 1.2.2. confirm
 : 확인을 누르면 true, 취소를 누르면 false 리턴
@@ -101,7 +101,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-2.jpg"><img src="/assets/images/스크린샷2018-06-12-2.jpg"></a></div>
+![Markdown Image][3]{: id="rebox" alt=""}
 
 #### 1.2.3. prompt
 : 사용자로부터 값을 입력받을 수 있음
@@ -125,7 +125,8 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-![Markdown Image][1]{: id="rebox"}
+<br>
+![Markdown Image][1]{: id="rebox" alt=""}
 
 <div class="breaker"></div>
 ### 1.3. Location 객체
@@ -255,4 +256,6 @@ _ㅌㅌㅌ_
 </html>
 {% endhighlight %}
 ---
-[1]: /assets/images/스크린샷2018-06-14-1.jpg
+[1]: /assets/images/스크린샷2018-06-14-2.jpg
+[2]: /assets/images/스크린샷2018-06-14-3.jpg
+[3]: /assets/images/스크린샷2018-06-14-1.jpg
