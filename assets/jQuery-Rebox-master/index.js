@@ -1,5 +1,5 @@
   $('#rebox > a').rebox();
 
   $('.post > p >  img[alt]').replaceWith(function() {
-    return '<figure>' + '<a href="' + $(this).attr('src') + '" id="rebox">' + '<img src="' + $(this).attr('src') + '"/></a>' + '<figcaption class="caption">' + $(this).attr('alt') + '</figcaption>' + '</figure>';
+    return '<div id="rebox" class="gallery">' + '<a href="' + $(this).attr('src') + '" title="' + $(this).attr('alt') + '">' + '<img src="' + $(this).attr('src') + '"/></a></div>';
   });
