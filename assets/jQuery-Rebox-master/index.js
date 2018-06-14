@@ -1,4 +1,5 @@
-$('#rebox').rebox({ selector: 'a' })
-    .on('rebox:open', function(e, rx){ console.log(e.type, rx); })
-    .on('rebox:close', function(e, rx){ console.log(e.type, rx); })
-    .on('rebox:goto', function(e, rx, i, $item, $img){ console.log(e.type, rx, i, $item, $img); });
+  $('#rebox > a').rebox();
+
+  $('.post > .rebox >  img[alt]').replaceWith(function() {
+    return '<figure>' + '<a href="' + $(this).attr('src') + '" id="rebox">' + '<img src="' + $(this).attr('src') + '"/></a>' + '<figcaption class="caption">' + $(this).attr('alt') + '</figcaption>' + '</figure>';
+  });
