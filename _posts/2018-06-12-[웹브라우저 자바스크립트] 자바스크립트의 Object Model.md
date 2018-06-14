@@ -62,7 +62,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 <div class="breaker"></div>
-###1.2. 커뮤니케이션 기능
+### 1.2. 커뮤니케이션 기능
 
 #### 1.2.1. alert
 : 경고창. 정보 제공 또는 디버깅 용도로 사용
@@ -125,7 +125,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-12-3.jpg"><img src="/assets/images/스크린샷2018-06-12-3.jpg"></a></div>
+<div id="rebox"> <a href="/assets/images/스크린샷2018-06-14-1.jpg"><img src="/assets/images/스크린샷2018-06-14-1.jpg"></a></div>
 
 <div class="breaker"></div>
 ### 1.3. Location 객체
