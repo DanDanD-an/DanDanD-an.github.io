@@ -21,7 +21,7 @@ description: Web2 - JavaScript
 <a href="#two">2. DataType</a><br>
 <a href="#three">3. Operator</a><br>
 <a href="#four">4. Statement</a><br>
-<a href="#five">5. Refactoring</a><br>
+<a href="#five">5. Object Model</a><br>
 <a href="#six">6. 문법 외 요소들</a>
 
 ---
@@ -117,9 +117,13 @@ cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span c
 
 ---
 <div id="five"></div>
-## 5. Refactoring
-: 이미 작성한 코드를 중복 제거, 효율성 증진, 가독성 향상 등의 방향으로 개선하는 것  
+## 5. Object Model
 
+### 1) BOM(Browser Object Model)
+: 전역객체 window를 이용함. 자세한 내용은 아래 포스트를 참고한다.
+
+### 2) DOM(Document Object Model)
+: document 프로퍼티를 이용함. 자세한 내용은 아래 포스트를 참고한다.
 ---
 <div id="six"></div>
 ## 6. 문법 외 요소들

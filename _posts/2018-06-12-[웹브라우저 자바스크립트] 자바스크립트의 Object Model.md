@@ -1,5 +1,5 @@
 ---
-title: "[웹브라우저 자바스크립트] 자바스크립트의 Object Model"
+title: "[웹브라우저 자바스크립트] 자바스크립트의 BOM"
 layout: post
 date: 2018-06-12 20:15
 image: /assets/images/markdown.jpg
@@ -15,21 +15,22 @@ author: Dan
 description: 웹브라우저 자바스크립트
 ---
 
-### 목록
-<a href="#one">1. BOM</a><br>
-<a href="#two">2. DOM</a><br>
+## 목록
+1. <a href="#one">전역객체 Window</a><br>
+2. <a href="#two">DOM(Document Object Model)</a><br>
 
 
 ---
-<div id="one"></div>
-## 1. BOM
+## BOM
 <div class="underlined"></div>
-: <span class="evidence-yellow">**BOM**(Browser Object Model)</span>이란 웹브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로 제어할 수 있도록 제공하는 수단. 전역객체인 <span class="evidence-yellow">**Window**</span>의 프로퍼티와 메소드들을 통해서 제어할 수 있다.
+: <span class="evidence-yellow">**BOM**(Browser Object Model)</span>이란 웹브라우저의 창이나 프레임을 추상화해서 프로그래밍적으로 제어할 수 있도록 제공하는 수단. 전역객체인 **Window** 의 프로퍼티와 메소드들을 통해서 제어할 수 있다.
 
-### 1.1. 전역객체 Window
+<div id="one"></div>
+## 1. 전역객체 Window
+<div class="underlined"></div>
 : <span class="evidence-yellow">**window**</span> 객체는 모든 객체가 소속된 객체이고, 전역객체이면서, 창이나 프레임을 의미, 제어한다.
 
-#### 1.1.1. 전역변수 호출하기
+### 1.1. 전역변수 호출하기
 * window 객체는 식별자 <span class="evidence-yellow">**window**</span>을 통해서 얻을 수 있으며, 생략 가능하다.
 * 예시 코드: window 객체의 메소드인 alert 호출하기
 {% highlight html %}
@@ -45,7 +46,7 @@ description: 웹브라우저 자바스크립트
 </html>
 {% endhighlight %}
 
-#### 1.1.2. 전역변수에 접근하기
+### 1.2. 전역변수에 접근하기
 * 예시 코드: 전역변수 a에 접근하기
 {% highlight html %}
 <!DOCTYPE html>
@@ -62,9 +63,11 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 <div class="breaker"></div>
-### 1.2. 커뮤니케이션 기능
+<div id="two"></div>
+## 2. 커뮤니케이션 기능
+<div class="underlined"></div>
 
-#### 1.2.1. alert
+### 2.1. alert
 : 경고창. 정보 제공 또는 디버깅 용도로 사용
 * 예시 코드
 {% highlight html %}
@@ -77,10 +80,9 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 #### 결과
-<br>
 ![Markdown Image][2]{: id="rebox" alt=""}
 
-#### 1.2.2. confirm
+### 2.2. confirm
 : 확인을 누르면 true, 취소를 누르면 false 리턴
 * 예시 코드
 {% highlight html %}
@@ -102,10 +104,9 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 #### 결과
-<br>
 ![Markdown Image][3]{: id="rebox" alt=""}
 
-#### 1.2.3. prompt
+### 2.3. prompt
 : 사용자로부터 값을 입력받을 수 있음
 * 예시 코드
 {% highlight html %}
@@ -127,21 +128,22 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 #### 결과
-<br>
 ![Markdown Image][1]{: id="rebox" alt=""}
 
 <div class="breaker"></div>
-### 1.3. Location 객체
+<div id="three"></div>
+## 3. Location 객체
+<div class="underlined"></div>
 : <span class="evidence-yellow">**Location**</span> 객체는 문서의 주소와 관련된 객체로 window 객체의 프로퍼티다. 이 객체를 이용해서 윈도우의 문서 URL을 변경할 수 있고, 문서의 위치와 관련해 다양한 정보를 얻을 수 있다.
 
-#### 1.3.1. 문서의 주소 정보 알아내기
+### 3.1. 문서의 주소 정보 알아내기
 
 * 현재 윈도우의 URL 콘솔에 출력
 {% highlight javascript %}
 console.log(location.toString(), location.href);
 {% endhighlight %}
 
-#### 1.3.2. URL 변경하기
+### 3.2. URL 변경하기
 
 * **location.href**: 특정 URL로 이동
 {% highlight javascript %}
@@ -163,9 +165,10 @@ function reloadPageWithHash() {
 {% endhighlight %}
 
 <div class="breaker"></div>
-### 1.4. 창 제어
-
-#### 1.4.1. window.open: 새 창 생성
+<div id="four"></div>
+## 4. 창 제어
+<div class="underlined"></div>
+### 4.1. window.open: 새 창 생성
 * 사용법 & 예시 코드
 {% highlight javascript %}
 <!DOCTYPE html>
@@ -174,27 +177,26 @@ function reloadPageWithHash() {
 <body>
 <ul>
     <li>
-        첫번째 인자는 새 창에 로드할 문서의 URL이다. 인자를 생략하면 이름이 붙지 않은 새 창이 만들어진다.<br />
+        <!--첫번째 인자는 새 창에 로드할 문서의 URL이다. 인자를 생략하면 이름이 붙지 않은 새 창이 만들어진다.-->
         <input type="button" onclick="open1()" value="window.open('demo2.html');" />
     </li>
     <li>
-        두번째 인자는 새 창의 이름이다. _self는 스크립트가 실행되는 창을 의미한다.<br />
+        <!--두번째 인자는 새 창의 이름이다. _self는 스크립트가 실행되는 창을 의미한다.-->
         <input type="button" onclick="open2()" value="window.open('demo2.html', '_self');" />
     </li>
     <li>
-        _blank는 새 창을 의미한다. <br />
+        <!--_blank는 새 창을 의미한다.-->
         <input type="button" onclick="open3()" value="window.open('demo2.html', '_blank');" />
     </li>
     <li>
-        창에 이름을 붙일 수 있다. open을 재실행 했을 때 동일한 이름의 창이 있다면 그곳으로 문서가 로드된다.<br />
+        <!--창에 이름을 붙일 수 있다. open을 재실행 했을 때 동일한 이름의 창이 있다면 그곳으로 문서가 로드된다.-->
         <input type="button" onclick="open4()" value="window.open('demo2.html', 'ot');" />
     </li>
     <li>
-        세번재 인자는 새 창의 모양과 관련된 속성이 온다.<br />
+        <!--세번재 인자는 새 창의 모양과 관련된 속성이 온다.-->
         <input type="button" onclick="open5()" value="window.open('demo2.html', '_blank', 'width=200, height=200, resizable=yes');" />
     </li>
 </ul>
-
 <script>
 function open1(){
     window.open('demo2.html');
@@ -216,7 +218,7 @@ function open5(){
 </html>
 {% endhighlight %}
 
-#### 1.4.2. 상호작용
+### 4.2. 상호작용
 {% highlight javascript %}
 <!DOCTYPE html>
 <html>
@@ -243,7 +245,7 @@ function open5(){
 {% endhighlight %}
 
 
-#### 1.4.3. 팝업 차단
+### 4.3. 팝업 차단
 * 예시 코드: 사용자의 인터렉션 없이 창을 열려고 하면 팝업 차단
 {% highlight html %}
 <!DOCTYPE html>
@@ -255,6 +257,7 @@ function open5(){
 </body>
 </html>
 {% endhighlight %}
+
 ---
 [1]: /assets/images/스크린샷2018-06-14-2.jpg
 [2]: /assets/images/스크린샷2018-06-14-3.jpg
