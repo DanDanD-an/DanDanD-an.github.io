@@ -125,7 +125,7 @@ description: 웹브라우저 자바스크립트
 {% endhighlight %}
 
 * 결과
-<div id="rebox"> <a href="/assets/images/스크린샷2018-06-14-1.jpg"><img src="/assets/images/스크린샷2018-06-14-1.jpg"></a></div>
+![Markdown Image][1]
 
 <div class="breaker"></div>
 ### 1.3. Location 객체
@@ -254,3 +254,5 @@ _ㅌㅌㅌ_
 </body>
 </html>
 {% endhighlight %}
+---
+[1]: /assets/images/스크린샷2018-06-14-1.jpg
