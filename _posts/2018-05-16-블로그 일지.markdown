@@ -19,7 +19,7 @@ externalLink: false
 
 <div class="breaker"></div>
 <div id="Apr"></div>
-## Apr 2018
+# Apr 2018
 <div class="underlined"></div>
 
 ### 0413
@@ -46,9 +46,8 @@ externalLink: false
 * Apply Web font-NanumSquareRound
 * Remove show-author
 
-<div class="breaker"></div>
 <div id="May"></div>
-## May 2018
+# May 2018
 <div class="underlined"></div>
 
 ### 0503
@@ -77,9 +76,8 @@ externalLink: false
 * Top button - adjust the position with media query
 * Top button - add icon
 
-<div class="breaker"></div>
 <div id="June"></div>
-## June 2018
+# June 2018
 <div class="underlined"></div>
 
 ### 0604

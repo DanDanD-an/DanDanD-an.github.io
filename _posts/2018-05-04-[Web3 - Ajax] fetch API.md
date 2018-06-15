@@ -9,6 +9,7 @@ tag:
 - JavaScript
 - Ajax
 - Webn
+- 생활코딩
 - 강의노트
 star: false
 category: blog
