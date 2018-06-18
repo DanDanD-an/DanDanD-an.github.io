@@ -18,6 +18,7 @@ externalLink: false
 <h3><a href="#Apr">April</a> - <a href="#May">May</a> - <a href="#June">June</a></h3>
 
 <div class="breaker"></div>
+<br>
 <div id="Apr"></div>
 # Apr 2018
 <div class="underlined"></div>
@@ -47,6 +48,7 @@ externalLink: false
 * Remove show-author
 
 <div id="May"></div>
+<br>
 # May 2018
 <div class="underlined"></div>
 
@@ -77,6 +79,7 @@ externalLink: false
 * Top button - add icon
 
 <div id="June"></div>
+<br>
 # June 2018
 <div class="underlined"></div>
 

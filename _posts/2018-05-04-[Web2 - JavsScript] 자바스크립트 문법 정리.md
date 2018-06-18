@@ -26,6 +26,7 @@ description: Web2 - JavaScript
 <a href="#six">6. 문법 외 요소들</a>
 
 ---
+<br>
 <div id="one"></div>
 ## 1. Run JavaScript
 
@@ -55,6 +56,19 @@ description: Web2 - JavaScript
 ### 1) String
 * 자바스크립트의 문자열 데이터타입. "" 또는 ''를 이용한다.
 * .length(문자열의 길이), .toUpperCase(대문자변환), trim(공백 제거), indexOf(인덱스 검색) 등 유용한 프로퍼티가 존재 - https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String 참조
+
+#### cf) ES2015에서 새롭게 추가된 method 3가지
+{% highlight javascript %}
+let str ="hello world ! ^^ ~~";
+
+let matchstr1 ="hello";
+let matchstr2 ="^~~";
+console.log(str.startsWith(matchstr1)); // true
+console.log(str.endsWith(matchstr2)); //false
+
+console.log(str.includes("world")); //true
+{% endhighlight %}
+*출처: 인프런 - 모던 자바스크립트 개발을 위한 ES6 강좌*
 
 ### 2) Number
 
