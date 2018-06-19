@@ -59,7 +59,6 @@ console.log(myName, myAge); // Dan 24
 <div id="three"></div>
 # 3. Destructuring의 활용_JSON 파싱
 <div class="underlined"></div>
-
 * 예시 코드
 {% highlight javascript %}
 var news = [
@@ -89,11 +88,6 @@ console.log(title, imgurl); // mbc, "http://static.naver.net/newsstand/2017/0313
 
 let [, {title, imgurl}] = news;
 console.log(imgurl); // "http://static.naver.net/newsstand/2017/0313/article...2"
-{% endhighlight %}
-
-* 예시 코드
-{% highlight javascript %}
-
 {% endhighlight %}
 
 

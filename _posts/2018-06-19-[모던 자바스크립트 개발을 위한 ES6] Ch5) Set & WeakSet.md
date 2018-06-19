@@ -18,6 +18,7 @@ description: 모던 자바스크립트 개발을 위한 ES6
 ## 목록
 1. <a href="#one">Set으로 유니크한 배열 만들기</a><br>
 2. <a href="#two">WeakSet으로 효과적으로 객체타입 저장하기</a><br>
+3. <a href="#three">실습 예제: 로또 번호 생성하기</a><br>
 
 ---
 <br>
@@ -74,4 +75,45 @@ arr = null;
 
 console.log(ws); // [object WeakSet] { ... }
 console.log(ws.has(arr), ws.has(arr2)); // false true
+{% endhighlight %}
+<br>
+<br>
+<div id="three"></div>
+# 3. 실습 예제: 로또 번호 생성하기
+<div class="underlined"></div>
+: 유일한 값을 추출하는 과정에서 **Set** 을 사용하고, getRandomNumber 함수에 변수를 전달하는 과정에서 **Destructuring** 을 사용하여 lotto 번호 생성하기
+<br>
+{% highlight javascript %}
+const SETTING = {
+  name: "LUCKY LOTTO!",
+  count: 6,
+  maxNumber: 45
+}
+
+function getRandomNumber(maxNumber) {
+  // 랜덤한 유일한 숫자값 추출
+}
+{% endhighlight %}
+
+* 나의 답안 코드
+{% highlight javascript %}
+const SETTING = {
+  name: "LUCKY LOTTO!",
+  count: 6,
+  maxNumber: 45
+}
+
+let {name: name, count: count, maxNumber: maxNumber} = SETTING;
+var colorSet = new Set();
+
+function getRandomNumber(maxNumber) {
+  // 랜덤한 유일한 숫자값 추출
+  let randomNum = Math.floor(Math.random() * Math.floor(maxNumber));
+  colorSet.add(randomNum);
+}
+
+for (let i = 0; i < count; i++) {
+  getRandomNumber(maxNumber);
+}
+console.log(colorSet.values());
 {% endhighlight %}
