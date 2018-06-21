@@ -136,9 +136,11 @@ cf) ***key 이름에 공백이 있을 경우***: []를 이용한다. ex) <span c
 
 ### 1) BOM(Browser Object Model)
 : 전역객체 window를 이용함. 자세한 내용은 아래 포스트를 참고한다.
+<a href="https://dandand-an.github.io/web/blog/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-BOM/">[웹브라우저 자바스크립트] 자바스크립트의 BOM</a>
 
 ### 2) DOM(Document Object Model)
 : document 프로퍼티를 이용함. 자세한 내용은 아래 포스트를 참고한다.
+<a href="https://dandand-an.github.io/web/blog/%EC%9B%B9%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%9D%98-DOM/">[웹브라우저 자바스크립트] 자바스크립트의 DOM</a>
 ---
 <div id="six"></div>
 ## 6. 문법 외 요소들

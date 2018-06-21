@@ -94,3 +94,5 @@ console.log(myarea.getArea()); // 200
 myarea = null;
 console.log(myarea); // null
 {% endhighlight %}
+
+---
